@@ -1,0 +1,23 @@
+Running on host compute091.bc4.acrc.priv
+Time is Mon Aug 16 12:45:14 BST 2021
+Directory is /mnt/storage/home/jm17923/fellowship/TephraProb
+Slurm job IS is 4651470
+This job runs on the following machines:
+compute091
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018a (9.4.0.813654) 64-bit (glnxa64)
+                             February 23, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+{Undefined function or variable 'runT2_JC'.
+
+Error in TephraProb_wrapper_JC (line 18)
+runT2_JC
+} 
+Finish time is Mon Aug 16 12:45:43 BST 2021

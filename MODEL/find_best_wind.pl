@@ -1,1 +1,0 @@
-../tephra2/find_best_wind.pl

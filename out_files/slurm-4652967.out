@@ -1,0 +1,179 @@
+Running on host compute229.bc4.acrc.priv
+Time is Tue Aug 17 09:29:32 BST 2021
+Directory is /mnt/storage/home/jm17923/fellowship/TephraProb
+Slurm job IS is 4652967
+This job runs on the following machines:
+compute229
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018a (9.4.0.813654) 64-bit (glnxa64)
+                             February 23, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+project = 
+
+  struct with fields:
+
+        grd_pth: 'Krak_local_2500'
+           vent: [1x1 struct]
+    seasonality: 1
+        seasons: {'all'  'dry'  'rainy'}
+    seasons_tag: {'All months'  'Nov-Mar'  'Apr-Oct'}
+       grd_type: 0
+        run_pth: '/mnt/storage/home/zs20225/TephraProb/RUNS/krak_cord/9/'
+       run_name: 'krak_cord'
+         points: -9999
+            par: 0
+          cores: 2
+
+Compiling Tephra2...
+make: *** No rule to make target `clean'.  Stop.
+[Warning: dialog is no longer supported when MATLAB is started with the
+-nodisplay or -noFigureWindows option or there is no display. For more
+information, see "Changes to -nodisplay and -noFigureWindows Startup Options"
+in the MATLAB Release Notes. To view the release note in your system browser,
+run web('www.mathworks.com/help/matlab/release-notes.html#br5ktrh-3',
+'-browser')] 
+[> In warnfiguredialog (line 21)
+  In dialog (line 39)
+  In msgbox (line 219)
+  In errordlg (line 59)
+  In runT2_JC (line 159)
+  In TephraProb_wrapper_JC (line 18)] 
+[Warning: MATLAB has disabled some advanced graphics rendering features by
+switching to software OpenGL. For more information, click <a
+href="matlab:opengl('problems')">here</a>.] 
+
+cmd_out =
+
+    'make: *** No targets specified and no makefile found.  Stop.
+     '
+
+
+project = 
+
+  struct with fields:
+
+        grd_pth: 'Krak_local_2500'
+           vent: [1x1 struct]
+    seasonality: 1
+        seasons: {'all'  'dry'  'rainy'}
+    seasons_tag: {'All months'  'Nov-Mar'  'Apr-Oct'}
+       grd_type: 0
+        run_pth: '/mnt/storage/home/zs20225/TephraProb/RUNS/krak_cord/9/'
+       run_name: 'krak_cord'
+         points: -9999
+            par: 0
+          cores: 2
+
+[Warning: Directory already exists.] 
+[> In process_T2_JC (line 26)
+  In TephraProb_wrapper_JC (line 19)] 
+- Summing files...
+
+project = 
+
+  struct with fields:
+
+        grd_pth: 'Krak_local_2500'
+           vent: [1x1 struct]
+    seasonality: 1
+        seasons: {'all'  'dry'  'rainy'}
+    seasons_tag: {'All months'  'Nov-Mar'  'Apr-Oct'}
+       grd_type: 0
+        run_pth: '/mnt/storage/home/zs20225/TephraProb/RUNS/krak_cord/9/'
+       run_name: 'krak_cord'
+         points: -9999
+            par: 0
+          cores: 2
+
+[Warning: Directory already exists.] 
+[> In probability_maker_JC (line 63)
+  In TephraProb_wrapper_JC (line 20)] 
+Tephra2 files have already been post processed. To re-process them, delete the dataT2_*.mat files from the DATA/ folder of your run
+Tephra2 files have already been post processed. To re-process them, delete the dataT2_*.mat files from the DATA/ folder of your run
+Tephra2 files have already been post processed. To re-process them, delete the dataT2_*.mat files from the DATA/ folder of your run
+- Computing Season all
+	_Loading Tephra2 data for season all
+	_Computing probability maps 
+- Computing Season dry
+	_Loading Tephra2 data for season dry
+	_Computing probability maps 
+- Computing Season rainy
+	_Loading Tephra2 data for season rainy
+	_Computing probability maps 
+- Done!
+
+project = 
+
+  struct with fields:
+
+        grd_pth: 'Krak_local_2500'
+           vent: [1x1 struct]
+    seasonality: 1
+        seasons: {'all'  'dry'  'rainy'}
+    seasons_tag: {'All months'  'Nov-Mar'  'Apr-Oct'}
+       grd_type: 0
+        run_pth: '/mnt/storage/home/zs20225/TephraProb/RUNS/krak_cord/9/'
+       run_name: 'krak_cord'
+         points: -9999
+            par: 0
+          cores: 2
+
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 79)
+  In TephraProb_wrapper_JC (line 21)] 
+- Loading probability data...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probability outputs - ArcMap ASCII Rasters - all...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probability outputs - ArcMap ASCII Rasters - dry...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probability outputs - ArcMap ASCII Rasters - rainy...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 79)
+  In TephraProb_wrapper_JC (line 21)] 
+- Loading probability data...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probabilistic isomass - ArcMap ASCII Rasters - all...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probabilistic isomass - ArcMap ASCII Rasters - dry...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probabilistic isomass - ArcMap ASCII Rasters - rainy...
+Finish time is Tue Aug 17 09:30:00 BST 2021
