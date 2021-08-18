@@ -54,7 +54,7 @@ project.seasons_tag= {'All months'  'Nov-Mar'  'Apr-Oct'};
 project.grd_type= 0;
 %project.run_pth= 'G:\TephraProb\RUNS\krak_cord\9\';
 %project.run_pth= '\TephraProb\RUNS\krak_cord\9\';
-project.run_pth= '/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9/';
+project.run_pth= getenv('PROJECT_RUN');
 project.run_name= 'krak_cord';
 project.points= -9999;
 project.par= 0;
@@ -76,13 +76,13 @@ end
 
 clear data
 
-mod_pth = [pwd, filesep, 'MODEL', filesep, 'forward_src', filesep];
+mod_pth = [getenv('MODEL'), filesep, filesep, 'forward_src', filesep];
 
 % On PCs, add the Cygwin folder to the PATH environment
 % Added 08-2018
 % Noticed a problem with the definition of the cygwin path when not
 % installed in c:\cygwin
-if ispc
+if ispc         %%%%%%%%%%%%%%%%%% need to update for environment variables %%%%%%%%%%%%%%%%%%%%%%
     path1 = getenv('PATH');
     
     % Retrieve architecture

@@ -8,7 +8,7 @@ if ~exist(fullfile(pwd, 'tephraProb.m'), 'file')
 end
 
 % Load preference file
-load(['CODE', filesep, 'VAR', filesep, 'prefs'], 'prefs');
+load([getenv('CODE'), filesep, 'VAR', filesep, 'prefs'], 'prefs');
 
 % Load project file
 project = load_run;
@@ -42,9 +42,9 @@ f2 = {'COL', 'GRID', 'RASTER'};
 
 
 % Load grid
-XX      = load(['GRID', filesep, project.grd_pth, filesep, project.grd_pth, '_utmx.dat']);
-YY      = load(['GRID', filesep, project.grd_pth, filesep, project.grd_pth, '_utmy.dat']);
-UTM     = load(['GRID', filesep, project.grd_pth, filesep, project.grd_pth, '.utm']);
+XX      = load([getenv('GRID'), filesep, project.grd_pth, filesep, project.grd_pth, '_utmx.dat']);
+YY      = load([getenv('GRID'), filesep, project.grd_pth, filesep, project.grd_pth, '_utmy.dat']);
+UTM     = load([getenv('GRID'), filesep, project.grd_pth, filesep, project.grd_pth, '.utm']);
 UTM     = UTM(:,1:2);
 UTM     = sortrows(UTM, 1);
 

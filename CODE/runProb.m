@@ -54,7 +54,7 @@ end
 
 if isfield(data, 'testrun') && isfield(data, 'long_lasting')   
     % Check run number
-    run_path        = fullfile('RUNS', data.run_name);
+    run_path        = fullfile(getenv('RUNS'), data.run_name);
     if exist(run_path, 'dir')
         run_nb      = num2str(get_run_nb(run_path));
         out_pth     = fullfile(run_path, run_nb);
@@ -404,7 +404,7 @@ if isfield(data, 'testrun') && isfield(data, 'long_lasting')
                             fclose(fid);
 
                             % T2_Stor prints the entire command for T2
-                            tmp_model= ['./', 'MODEL/tephra2-2012']; 
+                            tmp_model= [getenv('MODEL'), 'tephra2-2012']; 
                             tmp_conf = fullfile(out_pth, 'CONF', seas_str{seas}, num2str(i), [num2str(j, '%04d'), '.conf']);
                             tmp_wind = fullfile(data.wind_pth, [num2str(wind_vec(j), '%05d'), '.gen']);
                             tmp_gs   = fullfile(out_pth, 'GS', seas_str{seas}, [num2str(i, '%04d'), '.gsd']);

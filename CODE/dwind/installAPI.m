@@ -52,9 +52,9 @@ if system('python --version') ~= 0
     errordlg('No version of python found on your system', ' ')
 else
     if type == 0
-        cd('CODE/ecmwf-api-client-python/');
+        cd(fullfile(getenv('CODE'),'ecmwf-api-client-python');
     elseif type == 1
-        cd('CODE/cdsapi-0.2.5/');
+        cd(fullfile(getenv('CODE'),'cdsapi-0.2.5');
     end
     system('python setup.py install --user');
     cd('../../');

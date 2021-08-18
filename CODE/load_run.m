@@ -121,7 +121,7 @@ if exist('tmp.mat', 'file')
     
 else
     % Select run file
-    [flname, flpath] = uigetfile('RUNS/*.mat', 'Select a RUN file to open');
+    [flname, flpath] = uigetfile('*.mat', 'Select a RUN file to open', getenv('RUNS'));
     run_pth = [flpath, filesep, flname];
 
     if  flname > 0
@@ -149,7 +149,7 @@ else
         end
         
         % Check grid or points
-        if isempty(dir(fullfile('GRID/', project.grd_pth, '*.dat')))
+        if isempty(dir(fullfile(getenv('GRID'), project.grd_pth, '*.dat')))
             project.grd_type = 1;
         else
             project.grd_type = 0;

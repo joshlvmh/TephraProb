@@ -37,12 +37,12 @@ TephraProb is free software: you can redistribute it and/or modify
 
 function grid = load_grid
 
-grd_dir = dir('GRID/');
+grd_dir = dir(getenv('GRID'));
 grd_str = {grd_dir.name};
 
 [s,v]   = listdlg('PromptString', 'Select a grid:', 'SelectionMode', 'single', 'ListString', grd_str);
 
-if v == 1 && exist(grd_str{s}, 'dir') && length(dir(['GRID/',grd_str{s}, '*.dat'])) == 5 && length(dir(['GRID/',grd_str{s}, '*.utm'])) == 1
+if v == 1 && exist(grd_str{s}, 'dir') && length(dir([getenv('GRID'),grd_str{s}, '*.dat'])) == 5 && length(dir([getenv('GRID'),grd_str{s}, '*.utm'])) == 1
     grid = grd_str{s};
 else
     grid = 0;

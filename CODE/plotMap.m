@@ -34,7 +34,7 @@ if ~exist(fullfile(pwd, 'tephraProb.m'), 'file')
 end
 
 % Load preference file
-load(['CODE', filesep, 'VAR', filesep, 'prefs'], 'prefs');
+load([getenv('CODE'), filesep, 'VAR', filesep, 'prefs'], 'prefs');
 
 % Load project file
 project = load_run;
@@ -107,8 +107,8 @@ fprintf('\t  >> saveAllMaps(format)\n\twhere format can be ''png'', ''eps'' or '
 fprintf('_____________________________________________________________________________________________\n')
 
 % Load grid
-XX      = load(['GRID', filesep, project.grd_pth, filesep, project.grd_pth, '_lon.dat']);
-YY      = load(['GRID', filesep, project.grd_pth, filesep, project.grd_pth, '_lat.dat']);
+XX      = load([getenv('GRID'), filesep, project.grd_pth, filesep, project.grd_pth, '_lon.dat']);
+YY      = load([getenv('GRID'), filesep, project.grd_pth, filesep, project.grd_pth, '_lat.dat']);
 res     = (XX(1,2)-XX(1,1))/2;
 [vent_lat, vent_lon] = utm2ll(project.vent.east, project.vent.north, project.vent.zone);
 

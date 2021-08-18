@@ -531,13 +531,13 @@ global h
 
 if check_values == 1
     go = 1;
-    if exist(fullfile('GRID', get(h.grd_grid_name, 'String')), 'dir')
+    if exist(fullfile(getenv('GRID'), get(h.grd_grid_name, 'String')), 'dir')
         choice = questdlg('This name already exists. Overwrite?','','Yes','No','No');
         switch choice
             case 'No'
                 go = 0;
             case 'Yes'
-                rmdir(fullfile('GRID', get(h.grd_grid_name, 'String')), 's');
+                rmdir(fullfile(getenv('GRID'), get(h.grd_grid_name, 'String')), 's');
                 go = 1;
         end
     end
@@ -884,8 +884,8 @@ set(gca, 'Layer', 'top');
 
 function write_matrix(tmp, lat, lon, utm, utmx, utmy, dat)
 % Saving data
-mkdir(fullfile('GRID', tmp.name));
-out_name = fullfile('GRID',tmp.name,tmp.name);
+mkdir(fullfile(getenv('GRID'), tmp.name));
+out_name = fullfile(getenv('GRID'),tmp.name,tmp.name);
 wb = waitbar(0,'Writing grid...');
 save([out_name, '.mat'], 'tmp');
 waitbar(1 / 7);

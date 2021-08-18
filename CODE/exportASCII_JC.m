@@ -8,7 +8,7 @@ if ~exist(fullfile(pwd, 'tephraProb.m'), 'file')
 end
 
 % Load preference file
-load(['CODE', filesep, 'VAR', filesep, 'prefs'], 'prefs');
+load([getenv('CODE'), filesep, 'VAR', filesep, 'prefs'], 'prefs');
 
 %% Load project file
 %project = load_run;
@@ -20,7 +20,7 @@ project.seasonality= 1;
 project.seasons= {'all'  'dry'  'rainy'};
 project.seasons_tag= {'All months'  'Nov-Mar'  'Apr-Oct'};
 project.grd_type= 0;
-project.run_pth= '/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9/';
+project.run_pth= getenv('PROJECT_RUN');
 project.run_name= 'krak_cord';
 project.points= -9999;
 project.par= 0;
@@ -63,13 +63,13 @@ if isempty(r2); return; end
 
 % Folder names
 f1 = {'SUM', 'PROB', 'IM'};
-f2 = {'COL', 'GRID', 'RASTER'};
+f2 = {'COL', 'GRID', 'RASTER'}; % does this need changing to getenv('GRID')
 
 
 % Load grid
-XX      = load(['GRID', filesep, project.grd_pth, filesep, project.grd_pth, '_utmx.dat']);
-YY      = load(['GRID', filesep, project.grd_pth, filesep, project.grd_pth, '_utmy.dat']);
-UTM     = load(['GRID', filesep, project.grd_pth, filesep, project.grd_pth, '.utm']);
+XX      = load([getenv('GRID'), filesep, project.grd_pth, filesep, project.grd_pth, '_utmx.dat']);
+YY      = load([getenv('GRID'), filesep, project.grd_pth, filesep, project.grd_pth, '_utmy.dat']);
+UTM     = load([getenv('GRID'), filesep, project.grd_pth, filesep, project.grd_pth, '.utm']);
 UTM     = UTM(:,1:2);
 UTM     = sortrows(UTM, 1);
 

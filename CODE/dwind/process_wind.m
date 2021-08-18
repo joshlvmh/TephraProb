@@ -68,9 +68,9 @@ stor_time   = datevec(date_start:0.25:date_end);
 % Case NOAA NCEP/NCAR
 if ~isempty(regexp(wind.db, 'Reanalysis', 'ONCE'))
     if strcmp(wind.db, 'Reanalysis1')
-        in_path = 'WIND/_Reanalysis1_Rawdata/';
+        in_path = fullfile(getenv('WIND'),'_Reanalysis1_Rawdata');
     elseif strcmp(wind.db, 'Reanalysis2')
-        in_path = 'WIND/_Reanalysis2_Rawdata/';
+        in_path = fullfile(getenv('WIND'),'_Reanalysis2_Rawdata');
     end
 
     

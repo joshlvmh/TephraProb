@@ -15,13 +15,13 @@ project.seasonality= 1;
 project.seasons= {'all'  'dry'  'rainy'};
 project.seasons_tag= {'All months'  'Nov-Mar'  'Apr-Oct'};
 project.grd_type= 0;
-project.run_pth= '/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9/';
+project.run_pth= getenv('PROJECT_RUN');
 project.run_name= 'krak_cord';
 project.points= -9999;
 project.par= 0;
 project.cores= 2
 
-load(fullfile('CODE', 'VAR', 'prefs'), 'prefs'); % Load prefs
+load(fullfile(getenv('CODE'), 'VAR', 'prefs'), 'prefs'); % Load prefs
 if project.run_pth == -1; return; end
 mkdir(fullfile(project.run_pth, 'DATA'));
 

@@ -406,7 +406,7 @@ set_display
 
 function load_wind(~,~,w)
 % Select run file
-[flname, flpath] = uigetfile('WIND/*.mat', 'Select a WIND file to open');
+[flname, flpath] = uigetfile('*.mat', 'Select a WIND file to open', getenv('WIND'));
 tmp = load(fullfile(flpath, flname));
 wind = tmp.wind;
 
@@ -480,7 +480,7 @@ wind.yr_s    = yrs{get(w.wind3_s_year, 'Value')};
 wind.yr_e    = yrs{get(w.wind3_e_year, 'Value')};
 wind.mt_s    = mts{get(w.wind3_s_month, 'Value')};
 wind.mt_e    = mts{get(w.wind3_e_month, 'Value')};
-wind.folder  = fullfile('WIND', wind.name);
+wind.folder  = fullfile(getenv('WIND'), wind.name);
 
 download(wind);
 
@@ -580,13 +580,13 @@ else
     
     
     if strcmp(wind.db, 'Reanalysis1')
-        target_dir = 'WIND/_Reanalysis1_Rawdata/';
+        target_dir = fullfile(getenv('WIND'),'_Reanalysis1_Rawdata');
         ftp_dir    = 'Datasets/ncep.reanalysis/pressure/';
-        if ~exist('WIND/_Reanalysis1_Rawdata/', 'dir'); mkdir('WIND/_Reanalysis1_Rawdata/'); end
+        if ~exist(fullfile(getenv('WIND'),'_Reanalysis1_Rawdata'), 'dir'); mkdir(fullfile(getenv('WIND'),'_Reanalysis1_Rawdata')); end
     elseif strcmp(wind.db, 'Reanalysis2')
-        target_dir = 'WIND/_Reanalysis2_Rawdata/';
+        target_dir = fullfile(getenv('WIND'),'_Reanalysis2_Rawdata');
         ftp_dir    = 'Datasets/ncep.reanalysis2/pressure/';
-        if ~exist('WIND/_Reanalysis2_Rawdata/', 'dir'); mkdir('WIND/_Reanalysis2_Rawdata/'); end
+        if ~exist(fullfile(getenv('WIND'),'_Reanalysis2_Rawdata'), 'dir'); mkdir(fullfile(getenv('WIND'),'_Reanalysis2_Rawdata')); end
     else
         error('Unknown dataset requested')
     end

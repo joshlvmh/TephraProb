@@ -589,7 +589,7 @@ p.but_default = uicontrol(...
     'ForegroundColor', [.9 .5 .0],...
     'String', 'Default');
 
-if exist(['CODE', filesep, 'VAR', filesep, 'prefs.mat'], 'file')
+if exist([getenv('CODE'), filesep, 'VAR', filesep, 'prefs.mat'], 'file')
     parse_data('prefs')
 else
     parse_data('prefs_default')
@@ -639,7 +639,7 @@ prefs.maps.prob_cmap    = get(p.prob_cmap, 'Value');
 prefs.maps.mass_cmap    = get(p.pim_cmap, 'Value');
 prefs.maps.mass_log     = get(p.pim_log, 'Value');
 
-save(fullfile('CODE', 'VAR', 'prefs.mat'), 'prefs');
+save(fullfile(getenv('CODE'), 'VAR', 'prefs.mat'), 'prefs');
 
 close(gcbf)
 
@@ -649,14 +649,14 @@ parse_data('prefs_default')
 function but_GM(~, ~, ~)
 apiKey = inputdlg({'Google Map API Key'},...
               'API', [1 50]); 
-save(fullfile('CODE', 'dependencies', 'api_key.mat'), 'apiKey');
+save(fullfile(getenv('CODE'), 'dependencies', 'api_key.mat'), 'apiKey');
 disp('API Key saved');
 
 function parse_data(file)
 global p
 
 
-load(fullfile('CODE', 'VAR', file));
+load(fullfile(getenv('CODE'), 'VAR', file));
 
 % Prob calculations - Mass threshold
 tmp = sprintf('%.2f,' , prefs.prob.mass_thresh);

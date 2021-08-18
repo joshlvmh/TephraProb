@@ -226,7 +226,7 @@ set(gca, 'Layer', 'top');
 
 % Load button
 function cdp = but_load(~, ~, cdp)
-[flname, dirname] = uigetfile(fullfile('GRID','*.points'), 'Select a .points file to load');
+[flname, dirname] = uigetfile(fullfile(getenv('GRID'),'*.points'), 'Select a .points file to load');
 
 if flname == 0
     return
@@ -279,14 +279,14 @@ end
 
 % Save grid file
 check = 1;
-if exist(['GRID/', grd_name], 'dir') == 7
+if exist([getenv('GRID'), grd_name], 'dir') == 7
     choice = questdlg('A grid with the same name already exists. Overwrite?', ...
         '', ...
         'No','Yes','No');
     % Handle response
     switch choice
         case 'Yes'
-            rmdir(fullfile('GRID', grd_name), 's');
+            rmdir(fullfile(getenv('GRID'), grd_name), 's');
             check = 1;
         case 'No'
             return
@@ -294,9 +294,9 @@ if exist(['GRID/', grd_name], 'dir') == 7
 end
 
 if check == 1
-    mkdir(fullfile('GRID', grd_name));
+    mkdir(fullfile(getenv('GRID'), grd_name));
     % Write grid file
-    fid = fopen(fullfile('GRID', grd_name, [grd_name, '.utm']), 'wt');
+    fid = fopen(fullfile(getenv('GRID'), grd_name, [grd_name, '.utm']), 'wt');
     for i = 1:size(points,1)
         fprintf(fid, '%05.1f\t%06.1f\t%.0f\n', stor_grid(i,1), stor_grid(i,2), stor_grid(i,3));
     end
@@ -306,7 +306,7 @@ if check == 1
     grid.grd_name   = grd_name;
     grid.vent_zone  = vent_zone;
     grid.stor_points= stor_points;
-    save(fullfile('GRID', grd_name, [grd_name, '.points']), 'grid');
+    save(fullfile(getenv('GRID'), grd_name, [grd_name, '.points']), 'grid');
     warndlg('Points successfully saved!');
 end
 

@@ -35,9 +35,9 @@ end
 
 if nargin == 0  % -> called from GUI
     % Load preference file
-    load(['CODE', filesep, 'VAR', filesep, 'prefs'], 'prefs');
+    load([getenv('CODE'), filesep, 'VAR', filesep, 'prefs'], 'prefs');
 
-    d       = dir(['CURVES', filesep, '*.out']);
+    d       = dir([getenv('CURVES'), filesep, '*.out']);
     str     = {d.name};
     vis     = 'on';
     if ~isempty(str)
@@ -50,7 +50,7 @@ if nargin == 0  % -> called from GUI
     end
 
 else % -> called from another function
-    d       = dir(['CURVES', filesep, varargin{1}, '*']);
+    d       = dir([getenv('CURVES'), filesep, varargin{1}, '*']);
     str     = {d.name};
     s       = 1:length(str);
     vis     = 'off';
@@ -63,7 +63,7 @@ if ~isempty(s)
     f = figure('visible', vis); hold on
     maxtmp = 0;
     for i = 1:length(s)
-        file    = load(['CURVES', filesep, str{s(i)}]);
+        file    = load([getenv('CURVES'), filesep, str{s(i)}]);
         % Plot
         leg{i}  = sprintf('%s', get_name(str{s(i)}));
         plot(file(:,1), file(:,2), 'Color', cmap(i,:));
