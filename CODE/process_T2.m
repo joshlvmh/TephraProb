@@ -7,7 +7,7 @@ end
 
 % Load inputs and checks
 project = load_run;
-load(fullfile('CODE', 'VAR', 'prefs'), 'prefs'); % Load prefs
+load(fullfile(getenv('CODE'), 'VAR', 'prefs'), 'prefs'); % Load prefs
 if project.run_pth == -1; return; end
 mkdir(fullfile(project.run_pth, 'DATA'));
 

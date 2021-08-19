@@ -51,7 +51,8 @@ for iR = 1:length(runs)
             files = dir(fullfile(project.run_pth, 'OUT', runs{iR}, folds(j).name, '*.out'));
             
             for k = 1:length(files)
-                tmpF            = dlmread(fullfile(project.run_pth, 'OUT',runs{iR}, folds(j).name, files(k).name));
+                fprintf('%s\n', project.run_pth)
+                tmpF            = dlmread(fullfile(project.run_pth, 'OUT', runs{iR}, folds(j).name, files(k).name));
                % tmpF(:,1:2)     = round(tmpF(:,1:2));
                 tmpF(:,4)       = round(tmpF(:,4),prefs.files.nbDigits);
                 dlmwrite(fullfile(project.run_pth, 'OUT',runs{iR}, folds(j).name, files(k).name), tmpF, 'delimiter', '\t', 'precision', 8);

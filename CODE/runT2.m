@@ -61,7 +61,7 @@ end
 
 clear data
 
-mod_pth = [pwd, filesep, 'MODEL', filesep, 'forward_src', filesep];
+mod_pth = [pwd, filesep, getenv('MODEL'), filesep, 'forward_src', filesep];
 
 % On PCs, add the Cygwin folder to the PATH environment
 % Added 08-2018

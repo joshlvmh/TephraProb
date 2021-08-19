@@ -1,0 +1,43 @@
+Running on host compute077.bc4.acrc.priv
+Time is Thu Aug 19 08:46:21 BST 2021
+Directory is /mnt/storage/home/jm17923/fellowship/TephraProb
+Slurm job IS is 4665731
+This job runs on the following machines:
+compute077
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018a (9.4.0.813654) 64-bit (glnxa64)
+                             February 23, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+project = 
+
+  struct with fields:
+
+        grd_pth: 'Krak_local_2500'
+           vent: [1x1 struct]
+    seasonality: 1
+        seasons: {'all'  'dry'  'rainy'}
+    seasons_tag: {'All months'  'Nov-Mar'  'Apr-Oct'}
+       grd_type: 0
+        run_pth: '/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9'
+       run_name: 'krak_cord'
+         points: -9999
+            par: 0
+          cores: 2
+
+{Index exceeds array bounds.
+
+Error in runT2_JC (line 65)
+load(fullfile(project.run_pth, fl(1).name), 'data');
+
+Error in TephraProb_wrapper_JC (line 18)
+runT2_JC
+} 
+Finish time is Thu Aug 19 08:46:32 BST 2021

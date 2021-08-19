@@ -49,7 +49,7 @@ if ~exist([pwd, filesep, 'tephraProb.m'], 'file')
 end
 
 % Add the main code to the Matlab path
-addpath(genpath('CODE/'));
+addpath(genpath(getenv('CODE')));
 
 % Check if temporary run exists
 if exist('tmp.mat', 'file')
@@ -57,7 +57,7 @@ if exist('tmp.mat', 'file')
 end
 
 % Check if folders exist
-dirname = {'CURVES/', 'GRID/','WIND/', 'RUNS/'};
+dirname = {getenv('CURVES'), getenv('GRID'), getenv('WIND'), getenv('RUNS')};
 for i = 1:length(dirname)
     if ~exist(dirname{i}, 'dir')
         mkdir(dirname{i})

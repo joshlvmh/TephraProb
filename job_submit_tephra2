@@ -24,6 +24,8 @@ echo $SLURM_JOB_NODELIST
 
 matlab $options -r TephraProb_wrapper_JC
 
+#${MODEL}/tephra2_2020 ${PROJECT_RUN}/CONF/all/1/0001.conf ${GRID}/Krak_local_2500/Krak_local_2500.utm ${WIND}/wind_data/ascii/14183.gen ${PROJECT_RUN}/GS/all/0001.gsd > ${PROJECT_RUN}/OUT/all/1/krak_cord_0001.out
+
 ##mpirun -np 32 -hostfile $SLURM_JOB_NODELIST ./MODEL/tephra2-inversion_2020 ./MODEL/tephra2-inversion-conf_
 
 ##chunk=`printf "%02d" $SLURM_ARRAY_TASK_ID`

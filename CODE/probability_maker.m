@@ -44,7 +44,7 @@ end
 
 % Load inputs and checks
 project = load_run;
-load(fullfile('CODE', 'VAR', 'prefs'), 'prefs'); % Load prefs
+load(fullfile(getenv('CODE'), 'VAR', 'prefs'), 'prefs'); % Load prefs
 if project.run_pth == -1; return; end
 mkdir(fullfile(project.run_pth, 'DATA'));
 
@@ -68,6 +68,7 @@ for iR = 1:length(runs)
         preProcess(project, runs, prefs);
     else
         fprintf('Tephra2 files have already been post processed. To re-process them, delete the dataT2_*.mat files from the DATA/ folder of your run\n')
+        fprintf('RUNPATH %s\n', project.run_pth)
     end
 end
     
@@ -78,7 +79,7 @@ computeProbs(project, runs, prefs, mode)
 function preProcess(project, runs, prefs)
 
 % Load utm grid to retrieve output
-grd_tmp     = load(fullfile('GRID', project.grd_pth, [project.grd_pth, '.utm']));    
+grd_tmp     = load(fullfile(getenv('GRID'), project.grd_pth, [project.grd_pth, '.utm']));    
 disp('- Summing files...');
 
 for iR = 1:length(runs)
@@ -145,10 +146,10 @@ else
     
     % Load points
     if project.grd_type == 1
-        pth = fullfile('GRID', project.grd_pth, [project.grd_pth, '.points']);
+        pth = fullfile(getenv('GRID'), project.grd_pth, [project.grd_pth, '.points']);
     else
         fprintf('\t SELECT the .points file\n')
-        [fl,pth] = uigetfile('GRID/*.points','Select the .points file with the coordinates');
+        [fl,pth] = uigetfile('*.points','Select the .points file with the coordinates',getenv('GRID'));
         if fl == 0; return
         else pth = fullfile(pth, fl);
         end
@@ -164,8 +165,8 @@ else
     % In case hazard curves based on matrices, also need to retrieve the
     % grid to calculate indices
     if project.grd_type == 0
-        XX = load(fullfile('GRID', project.grd_pth, [project.grd_pth, '_utmx.dat']));
-        YY = load(fullfile('GRID', project.grd_pth, [project.grd_pth, '_utmy.dat']));
+        XX = load(fullfile(getenv('GRID'), project.grd_pth, [project.grd_pth, '_utmx.dat']));
+        YY = load(fullfile(getenv('GRID'), project.grd_pth, [project.grd_pth, '_utmy.dat']));
     
         % Test if poins are in the grid
         idx = points.x<=max(XX(1,:)) & points.x>=min(XX(1,:)) & ...
@@ -238,7 +239,7 @@ for iR = 1:length(runs)
     if mode == 1
         fprintf('\t_Writing hazard curves \n')
         for iP = 1:length(dataProb.points.x)
-            dlmwrite(fullfile('CURVES', [dataProb.points.name{iP}, '_',  project.run_name, '_', runs{iR}, '.out']), [dataProb.massTc', dataProb.curve.(runs{iR})(iP,:)'.*100], 'delimiter', '\t');
+            dlmwrite(fullfile(getenv('CURVES'), [dataProb.points.name{iP}, '_',  project.run_name, '_', runs{iR}, '.out']), [dataProb.massTc', dataProb.curve.(runs{iR})(iP,:)'.*100], 'delimiter', '\t');
         end
     end
 end
