@@ -1,0 +1,1149 @@
+# callstacks file version: 4
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance start rva	instance size	instance end rva	finst rowid	roi
+         1	        -1	      5683	    0	      0	                                  _start	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	5683	45	0	2	0
+         2	        -1	      5723	    0	      0	                                  _start	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	5683	45	0	2	0
+         3	       975	    138036	    1	      1	     [Loop@0x21a79 in __libc_start_main]	/usr/lib64/libc.so.6	137849	391		5	0
+         4	         3	      5009	    0	      0	                                    main	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4832	851	0	3	0
+         5	         4	      6274	    0	      0	                              get_points	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	6176	477	0	4	0
+         6	         5	     16551	    0	      0	                               GC_malloc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	16445	125	0	8	0
+         7	         6	     16280	    0	      0	                       GC_generic_malloc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	16041	286	0	9	0
+         8	       977	    563104	    1	      1	         [Loop@0x897a0 in __memset_sse2]	/usr/lib64/libc.so.6	563104	32		10	0
+         9	       977	    563115	    1	      1	         [Loop@0x897a0 in __memset_sse2]	/usr/lib64/libc.so.6	563104	32		10	0
+        10	       977	    563121	    1	      1	         [Loop@0x897a0 in __memset_sse2]	/usr/lib64/libc.so.6	563104	32		10	0
+        11	       999	      6401	    1	      0	        [Loop at line 281 in get_points]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	6376	56	6496,6568,6432	14	0
+        12	        11	    430325	    0	      1	                         __isoc99_sscanf	/usr/lib64/libc.so.6	430208	143	0	13	0
+        13	       998	      6332	    1	      0	        [Loop at line 277 in get_points]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	6302	198	6580,6568,6432	16	0
+        14	        13	    439253	    0	      1	                                   fgets	/usr/lib64/libc.so.6	439088	364	0	15	0
+        15	        14	    443470	    0	      1	                        _IO_getline_info	/usr/lib64/libc.so.6	443440	391	0	18	0
+        16	        14	    443465	    0	      1	                        _IO_getline_info	/usr/lib64/libc.so.6	443440	391	0	18	0
+        17	        11	    430342	    0	      1	                         __isoc99_sscanf	/usr/lib64/libc.so.6	430208	143	0	13	0
+        18	        17	    430459	    0	      1	                        __isoc99_vsscanf	/usr/lib64/libc.so.6	430352	122	0	23	0
+        19	        18	    369437	    0	      1	                             _IO_vfscanf	/usr/lib64/libc.so.6	356400	35060	0	28	0
+        20	        19	    257712	    0	      1	                   ____strtod_l_internal	/usr/lib64/libc.so.6	251888	7754	0	54	0
+        21	        19	    256702	    0	      1	                   ____strtod_l_internal	/usr/lib64/libc.so.6	251888	7754	0	54	0
+        22	       981	    250119	    1	      1	     [Loop@0x3d0d0 in str_to_mpn.isra.0]	/usr/lib64/libc.so.6	250064	310		67	0
+        23	        17	    430438	    0	      1	                        __isoc99_vsscanf	/usr/lib64/libc.so.6	430352	122	0	23	0
+        24	        23	    499572	    0	      1	            _IO_str_init_static_internal	/usr/lib64/libc.so.6	499520	150	0	69	0
+        25	        24	    492562	    0	      1	                                _IO_setb	/usr/lib64/libc.so.6	492544	110	0	70	0
+        26	        13	    439088	    0	      1	                                   fgets	/usr/lib64/libc.so.6	439088	364	0	15	0
+        27	        19	    251957	    0	      1	                   ____strtod_l_internal	/usr/lib64/libc.so.6	251888	7754	0	54	0
+        28	        27	    551797	    0	      1	                             __GI_strlen	/usr/lib64/libc.so.6	551776	221	0	71	0
+        29	       998	      6547	    1	      0	        [Loop at line 277 in get_points]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	6302	198	6580,6568,6432	16	0
+        30	       985	    361052	    1	      1	           [Loop@0x5824c in _IO_vfscanf]	/usr/lib64/libc.so.6	361036	1023		72	0
+        31	         3	      5097	    0	      0	                                    main	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4832	851	0	3	0
+        32	      1003	     15087	    1	      0	[Loop at line 724 in set_eruption_values]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	15040	67	13598,15107	17	0
+        33	        32	     16551	    0	      0	                               GC_malloc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	16445	125	0	8	0
+        34	        33	     16188	    0	      0	                       GC_generic_malloc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	16041	286	0	9	0
+        35	      1005	     15470	    1	      0	       [Loop@0x403c48 in GC_alloc_large]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	15432	43	15485,15475	20	0
+        36	        35	     22804	    0	      0	                    GC_collect_or_expand	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	22738	343	0	22	0
+        37	        36	     19771	    0	      0	                 GC_try_to_collect_inner	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	19455	500	0	24	0
+        38	      1007	     20589	    1	      0	      [Loop@0x404fed in GC_stopped_mark]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	20461	27	20467,20601	25	0
+        39	        38	     43932	    0	      0	                            GC_mark_some	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	43472	782	0	29	0
+        40	      1010	     45367	    1	      0	         [Loop@0x40b134 in GC_mark_from]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	45364	80	45444,46324,45444,46324	30	0
+        41	      1007	     20463	    1	      0	      [Loop@0x404fed in GC_stopped_mark]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	20461	27	20467,20601	25	0
+        42	      1010	     45379	    1	      0	         [Loop@0x40b134 in GC_mark_from]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	45364	80	45444,46324,45444,46324	30	0
+        43	      1010	     45415	    1	      0	         [Loop@0x40b134 in GC_mark_from]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	45364	80	45444,46324,45444,46324	30	0
+        44	      1010	     45406	    1	      0	         [Loop@0x40b134 in GC_mark_from]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	45364	80	45444,46324,45444,46324	30	0
+        45	      1016	      5142	    1	      0	              [Loop at line 172 in main]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	5100	51	5151	33	0
+        46	      1019	     10285	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+        47	        46	    159197	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+        48	        47	    421231	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+        49	        47	    421309	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+        50	        47	    422795	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+        51	      1019	     10884	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+        52	        51	    380326	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+        53	      1019	     10623	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+        54	        53	    382070	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+        55	      1019	     10650	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+        56	        53	    172568	    0	      1	                                copysign	/usr/lib64/libm.so.6	172560	21	0	34	0
+        57	        46	    159203	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+        58	        51	      4240	    0	      0	                     [Import thunk atan]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4240	16	0	39	0
+        59	        51	    172568	    0	      1	                                copysign	/usr/lib64/libm.so.6	172560	21	0	34	0
+        60	        46	    159178	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+        61	        60	    416085	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+        62	      1019	     10461	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+        63	        47	    420471	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+        64	        47	    420470	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+        65	      1027	     10402	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+        66	        65	    154115	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+        67	      1030	     10000	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+        68	        67	    154098	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+        69	        68	    371397	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+        70	        47	    421814	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+        71	        60	    412214	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+        72	        51	    382018	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+        73	        65	    154094	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+        74	        47	    422891	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+        75	        46	    159185	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+        76	        60	    416293	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+        77	        47	    422885	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+        78	        60	    415818	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+        79	        60	    412799	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+        80	        65	    154098	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+        81	        80	    371349	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+        82	        80	    371350	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+        83	        60	    416232	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+        84	        60	    419087	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+        85	        47	    421451	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+        86	        60	    413494	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+        87	      1027	     10398	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+        88	        47	    422684	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+        89	        80	    372226	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+        90	        51	    382165	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+        91	        60	    413049	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+        92	        80	    371360	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+        93	      1019	     10646	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+        94	        51	    380331	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+        95	        60	    416247	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+        96	        60	    412215	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+        97	      1027	     10334	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+        98	      1027	     10386	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+        99	        47	    421961	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       100	        47	    421896	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       101	        47	    423765	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       102	        47	    422771	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       103	        60	    413523	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       104	      1019	     10535	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       105	      1019	     10634	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       106	        51	    382293	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       107	        51	    385912	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       108	        51	    386031	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       109	        60	    413066	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       110	        60	    416205	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       111	      1030	     10073	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       112	        60	    413448	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       113	        65	    154229	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       114	        47	    420493	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       115	        47	    421790	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       116	        47	    421948	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       117	        51	    386640	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       118	      1030	     11076	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       119	       118	    156155	    0	      1	                                     pow	/usr/lib64/libm.so.6	156128	429	0	44	0
+       120	       119	     83950	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       121	      1019	     10422	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       122	      1019	     10543	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       123	      1019	     10654	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       124	        60	    413071	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       125	        68	    371349	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       126	        47	    421319	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       127	      1019	     10252	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       128	        47	     21504	    0	      1	                             func@0x5400	/usr/lib64/libm.so.6	21504	6	0	46	0
+       129	      1019	     10545	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       130	        80	    371371	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       131	        51	    385904	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       132	        47	    422849	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       133	      1019	     10609	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       134	        47	    420464	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       135	      1019	     10432	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       136	        47	    422845	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       137	        65	    154080	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       138	        60	    412972	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       139	        53	    382165	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       140	      1030	     10097	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       141	        65	    154146	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       142	        47	    421333	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       143	        53	    382370	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       144	      1027	     10286	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       145	        51	    386026	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       146	        47	    421574	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       147	        51	    385978	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       148	        60	    416251	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       149	        60	    415342	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       150	        53	    382240	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       151	        53	    380326	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       152	        47	    420466	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       153	        60	    412226	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       154	      1019	     10899	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       155	        47	    421768	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       156	        47	    422741	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       157	        65	     31432	    0	      1	                       __kernel_standard	/usr/lib64/libm.so.6	22624	9721	0	49	0
+       158	      1019	     10526	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       159	        53	    382277	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       160	        47	    420491	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       161	        47	    422638	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       162	        47	    421504	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       163	        60	    413022	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       164	        53	    387488	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       165	        60	    413008	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       166	        80	    371381	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       167	      1019	     10903	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       168	       119	     84648	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       169	       168	     66560	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       170	        46	    159208	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+       171	        60	    416237	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       172	        60	     21184	    0	      1	                    [Import thunk qsort]	/usr/lib64/libm.so.6	21184	16	0	51	0
+       173	        47	    422879	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       174	        47	    422759	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       175	      1019	     10446	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       176	        60	    412441	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       177	        53	    380331	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       178	        51	    385999	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       179	        80	    371364	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       180	        51	    388472	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       181	        60	    412963	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       182	        51	    382309	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       183	        51	    382272	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       184	        47	    421751	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       185	        51	    385940	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       186	        60	    412230	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       187	        60	    412261	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       188	      1027	     10292	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       189	        47	    420486	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       190	      1019	     10581	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       191	        51	    382102	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       192	        51	    382360	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       193	        60	    412959	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       194	        60	    412235	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       195	      1027	     10360	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       196	        60	    416242	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       197	        80	    371344	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       198	        47	    422829	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       199	        53	    382018	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       200	        51	    382288	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       201	        51	    380404	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       202	        67	    154115	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       203	        51	    382070	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       204	        60	    419100	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       205	        53	    382261	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       206	        47	    423761	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       207	        47	    422780	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       208	      1019	     10893	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       209	        51	    382370	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       210	        51	    386105	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       211	        51	    382277	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       212	        60	    413533	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       213	        53	    382360	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       214	        47	    421614	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       215	        60	    412982	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       216	        47	    422863	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       217	        60	    412876	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       218	        60	    413770	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       219	        47	    422825	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       220	        47	    421629	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       221	        80	    371415	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       222	        47	    423288	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       223	       222	    411518	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       224	        65	    154216	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       225	        51	    380380	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       226	        47	    422656	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       227	        51	    382209	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       228	        47	    422821	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       229	        80	    371808	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       230	        60	    412451	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       231	      1019	     10569	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       232	        60	    412894	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       233	      1019	     10660	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       234	        47	    420503	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       235	        60	    413035	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       236	       119	     84574	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       237	      1019	     10450	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       238	        47	    421938	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       239	       119	     84463	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       240	        51	    382056	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       241	        51	    385955	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       242	        60	    412752	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       243	        60	    413026	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       244	        53	    172580	    0	      1	                                copysign	/usr/lib64/libm.so.6	172560	21	0	34	0
+       245	        60	    419868	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       246	        60	    412450	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       247	        46	    159120	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+       248	      1019	     10713	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       249	        47	    422676	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       250	      1030	     10093	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       251	        46	    159189	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+       252	        60	    413044	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       253	      1027	     10374	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       254	        80	    371785	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       255	      1027	     10307	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       256	        53	    382304	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       257	        60	    413731	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       258	        47	    420482	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       259	        60	    416256	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       260	       119	     84532	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       261	       222	    411296	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       262	      1019	     10506	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       263	        47	    421867	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       264	        60	    416283	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       265	        51	    382232	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       266	        51	    382048	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       267	        47	    421285	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       268	        65	    154138	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       269	        65	     28600	    0	      1	                       __kernel_standard	/usr/lib64/libm.so.6	22624	9721	0	49	0
+       270	        47	    422996	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       271	      1027	     10394	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       272	        60	    413053	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       273	        51	    382320	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       274	        47	    421562	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       275	      1019	     10275	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       276	        51	    386047	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       277	        60	    412208	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       278	        47	    423302	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       279	        47	    422737	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       280	        60	    413700	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       281	        47	    423015	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       282	      1027	     10378	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       283	        60	    416096	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       284	        47	    421833	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       285	        47	    422698	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       286	        51	    386862	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       287	        47	    421216	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       288	        53	    382236	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       289	        51	    382191	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       290	        60	    412830	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       291	        53	    382002	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       292	        51	    386085	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       293	      1019	     10605	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       294	      1019	     10484	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       295	        51	    382304	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       296	       222	    411636	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       297	        51	    386714	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       298	        47	    421391	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       299	        60	    412991	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       300	      1027	     10356	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       301	        60	    413478	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       302	        51	    382030	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       303	      1019	     10468	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       304	        51	    387373	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       305	        51	    385994	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       306	        46	    159112	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+       307	       222	    411558	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       308	        65	     22629	    0	      1	                       __kernel_standard	/usr/lib64/libm.so.6	22624	9721	0	49	0
+       309	        51	    382380	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       310	        51	    382087	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       311	        53	    382288	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       312	        60	    416260	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       313	        60	    412951	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       314	        53	    384149	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       315	        47	    421582	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       316	        47	    422875	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       317	      1030	     11093	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       318	        65	    154198	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       319	        53	    382056	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       320	        65	    154155	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       321	      1027	     10352	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       322	        51	    386015	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       323	        47	    423280	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       324	        47	    424491	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       325	        47	    422837	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       326	        51	    382122	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       327	      1030	     10041	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       328	        53	    382309	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       329	        60	    413439	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       330	        53	    380392	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       331	        47	    420547	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       332	        60	    416157	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       333	        60	    412987	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       334	        60	    412839	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       335	        47	    424911	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       336	        51	    386097	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       337	        60	    412835	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       338	        60	    416223	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       339	        51	    386400	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       340	        47	    422841	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       341	        80	    371397	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       342	        60	    413061	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       343	        51	    382336	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       344	        47	    421910	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       345	       222	    411966	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       346	        53	    382320	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       347	        47	    420524	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       348	        51	    382240	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       349	        60	    416139	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       350	        47	    421975	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       351	        51	    383910	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       352	        47	    421796	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       353	       222	    411914	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       354	        80	    371369	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       355	      1019	     10425	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       356	        60	    415325	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       357	        47	    421259	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       358	        60	    413636	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       359	        60	    413392	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       360	        47	    421849	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       361	        65	     22647	    0	      1	                       __kernel_standard	/usr/lib64/libm.so.6	22624	9721	0	49	0
+       362	        68	    371517	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       363	        47	    421619	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       364	        51	    382261	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       365	      1027	     10382	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       366	      1027	     10311	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       367	      1019	     10531	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       368	        47	    421643	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       369	        60	    416274	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       370	        53	    382336	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       371	        47	    422871	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       372	        51	    387488	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       373	        51	    387518	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       374	      1027	     10330	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       375	        60	    416060	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       376	        60	    413083	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       377	        68	    371623	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       378	        47	    423664	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       379	      1019	     10403	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       380	        53	    382293	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       381	        60	    416124	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       382	        51	    385983	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       383	        80	    372557	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       384	       119	     84380	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       385	        60	    412914	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       386	        53	    380350	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       387	        60	    412247	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       388	       222	    411670	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       389	        68	    371643	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       390	        47	    422000	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       391	        65	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	1	0	1	0
+       392	       391	    371360	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       393	        51	    382351	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       394	        60	    415321	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       395	        60	    412844	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       396	        47	    421957	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       397	       119	     84014	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       398	        51	    386464	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       399	        51	    380350	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       400	        60	    416299	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       401	        53	    382256	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       402	      1027	     10370	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       403	        47	    421435	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       404	        60	    413605	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       405	      1018	     10923	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+       406	        60	    413518	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       407	        47	    423294	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       408	       119	     84283	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       409	        47	    421988	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       410	        65	    154200	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       411	        65	    154153	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       412	        60	    413718	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       413	        51	    380362	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       414	        47	    421879	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       415	        47	    421943	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       416	        53	    382182	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       417	        51	    385908	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       418	        51	    387512	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       419	        46	    159140	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+       420	        51	    386969	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       421	        60	    416170	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       422	        47	    421924	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       423	       119	     84664	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       424	       168	     66417	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       425	        46	    159104	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+       426	        60	    412237	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       427	        47	    421305	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       428	        51	    386749	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       429	        65	     22666	    0	      1	                       __kernel_standard	/usr/lib64/libm.so.6	22624	9721	0	49	0
+       430	       119	     84536	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       431	        53	    380342	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       432	        47	    421711	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       433	        51	    382355	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       434	        51	    172560	    0	      1	                                copysign	/usr/lib64/libm.so.6	172560	21	0	34	0
+       435	        65	    154183	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       436	        60	    416008	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       437	        51	    387242	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       438	        51	    386913	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       439	        45	      9716	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+       440	        47	    421994	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       441	        60	    415872	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       442	        53	    382030	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       443	        51	    386089	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       444	       119	     84485	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       445	       222	    411505	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       446	        51	    381978	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       447	        47	    422716	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       448	        51	    386494	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       449	        51	    386908	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       450	       118	    156140	    0	      1	                                     pow	/usr/lib64/libm.so.6	156128	429	0	44	0
+       451	        47	    421387	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       452	        51	    386077	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       453	        47	    421952	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       454	        51	    386484	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       455	        47	    421535	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       456	        47	    422703	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       457	        60	    416153	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       458	        60	    416111	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       459	       222	    411704	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       460	        53	    382160	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       461	       222	    411644	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       462	        65	     28607	    0	      1	                       __kernel_standard	/usr/lib64/libm.so.6	22624	9721	0	49	0
+       463	       222	    411513	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       464	        53	    384061	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       465	        53	    381960	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       466	        51	    382225	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       467	        53	    384043	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       468	        60	    413466	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       469	        47	    422618	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       470	        68	    371729	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       471	        53	    384177	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       472	        60	    416196	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       473	        60	    413587	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       474	      1019	     10585	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       475	        60	    413750	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       476	        47	    421671	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       477	        51	    382155	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       478	        60	    417990	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       479	        51	    382256	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       480	        53	    382272	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       481	        68	    371709	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       482	        47	    422790	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       483	        51	    382236	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       484	       222	    411465	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       485	        47	    422661	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       486	        47	    421549	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       487	        60	    418136	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       488	       222	    411975	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       489	        60	    413103	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       490	        60	    413566	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       491	        51	    385880	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       492	        60	    419082	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       493	       222	    411304	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       494	        53	    380320	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       495	        51	    387325	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       496	        68	    371547	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       497	       168	     66556	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       498	       222	    411495	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       499	        51	    386945	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       500	        51	    380410	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       501	       119	     83982	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       502	        47	    421606	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       503	        60	    416178	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       504	        47	    423788	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       505	        47	    421984	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       506	        60	    413803	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       507	      1019	     10684	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       508	        51	    382039	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       509	        51	    387254	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       510	       222	    411700	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       511	        51	    386435	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       512	        47	    422911	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       513	        46	    159198	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+       514	        60	    419111	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       515	      1019	     10232	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       516	       222	    411696	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       517	        47	    423757	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       518	        51	    386734	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       519	      1030	      9966	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       520	        47	    421739	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       521	        51	    172580	    0	      1	                                copysign	/usr/lib64/libm.so.6	172560	21	0	34	0
+       522	        51	    386890	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       523	        53	    381978	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       524	        51	    386663	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       525	        53	    382052	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       526	       222	    411584	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       527	        53	    388214	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       528	       119	     84305	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       529	        60	    415682	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       530	      1019	     10551	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       531	        60	    413760	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       532	       119	     84209	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       533	       222	    411473	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       534	        51	    386744	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       535	      1018	      9974	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+       536	        53	    382048	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       537	        53	    382380	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       538	        53	    384002	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       539	        53	    382351	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       540	       222	    411395	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       541	        51	    385967	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       542	        51	    386921	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       543	        53	    382220	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       544	        60	    418156	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       545	        53	    382142	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       546	        51	    386700	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       547	        60	    412283	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       548	        47	    421871	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       549	        60	    412777	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       550	        45	      9814	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+       551	       550	    159178	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+       552	       551	    413566	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       553	        51	    386589	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       554	        51	    386010	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       555	        60	    418176	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       556	        53	    382209	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       557	        51	    387365	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       558	       222	    411944	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       559	        51	    385919	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       560	        51	    386093	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       561	        51	    382365	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       562	        47	    421230	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       563	        60	    415316	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       564	        53	    383910	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       565	       222	    411656	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       566	        47	    421854	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       567	        80	    372524	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       568	       168	     66402	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       569	        51	    386811	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       570	        47	    421905	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       571	       222	    411971	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       572	       168	     66500	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       573	        47	    423716	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       574	       119	     84472	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       575	        51	    385922	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       576	        60	    413077	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       577	       168	     66612	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       578	        51	    386421	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       579	        80	    372200	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       580	       579	    453078	    0	      1	                           __slowexp_avx	/usr/lib64/libm.so.6	452992	340	0	53	0
+       581	       957	    453939	    1	      1	           [Loop@0x6ed20 in __mpexp_avx]	/usr/lib64/libm.so.6	453920	54		55	0
+       582	       960	    452392	    1	      1	             [Loop@0x6e718 in __mul_avx]	/usr/lib64/libm.so.6	452376	41		57	0
+       583	        51	    386724	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       584	        47	    421411	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       585	        51	    387146	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       586	        51	    386517	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       587	        51	    386844	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       588	       222	    411952	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       589	        51	    382182	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       590	        60	    412432	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       591	        80	    372077	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       592	        53	    382191	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       593	        60	    417955	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       594	       579	    453099	    0	      1	                           __slowexp_avx	/usr/lib64/libm.so.6	452992	340	0	53	0
+       595	       962	    450340	    1	      1	          [Loop@0x6df20 in __dbl_mp_avx]	/usr/lib64/libm.so.6	450336	22		60	0
+       596	        80	    371489	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       597	        80	    371623	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       598	        80	    371729	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       599	        47	    421240	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       600	        60	    412857	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       601	       960	    452415	    1	      1	             [Loop@0x6e718 in __mul_avx]	/usr/lib64/libm.so.6	452376	41		57	0
+       602	       222	    411357	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       603	        51	    382375	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       604	        68	    371350	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       605	        53	    382375	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       606	       222	    411477	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       607	        51	    382026	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       608	        47	    423601	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       609	       222	    411652	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       610	       222	    411726	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       611	        67	    154153	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       612	       957	    453964	    1	      1	           [Loop@0x6ed20 in __mpexp_avx]	/usr/lib64/libm.so.6	453920	54		55	0
+       613	       967	    452405	    1	      1	             [Loop@0x6e718 in __mul_avx]	/usr/lib64/libm.so.6	452376	41		57	0
+       614	        80	    372015	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       615	        60	    413539	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       616	      1018	     10150	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+       617	       966	    452363	    1	      1	             [Loop@0x6e6e8 in __mul_avx]	/usr/lib64/libm.so.6	452328	180		59	0
+       618	       119	     84499	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       619	        80	    371569	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       620	        47	    421419	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       621	       168	     66604	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       622	       119	     84216	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       623	        80	    371652	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       624	        80	    371505	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       625	        53	    380362	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       626	        53	    384332	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       627	        60	    416191	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       628	        80	    371537	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       629	        60	    412445	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       630	        53	    382039	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       631	      1019	     10539	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       632	        80	    371701	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       633	        67	    154146	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       634	        51	    386964	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       635	      1030	     10087	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       636	       119	     83929	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       637	      1030	     10065	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       638	        80	    371595	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       639	        51	    382130	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       640	        80	    372048	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       641	        80	    371749	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       642	        51	    387187	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       643	       168	     66531	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       644	        80	    371660	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       645	        80	    371721	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       646	       119	     84270	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       647	        47	    423609	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       648	        80	    371697	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       649	        53	    382102	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       650	        60	    416287	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       651	      1018	     10917	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+       652	        60	    413765	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       653	       168	     66588	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       654	        47	    421863	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       655	        51	    387282	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       656	        47	    421443	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       657	      1030	     10057	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       658	        51	    386101	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       659	       222	    411692	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       660	        60	    413423	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       661	        53	    384093	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       662	        80	    371643	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       663	        51	    385950	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       664	        68	    371537	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       665	        51	    381960	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       666	       580	    453732	    0	      1	                             __mpexp_avx	/usr/lib64/libm.so.6	453344	1282	0	56	0
+       667	       666	    452814	    0	      1	                               __dvd_avx	/usr/lib64/libm.so.6	452672	309	0	62	0
+       668	       667	    270557	    0	      1	                                    norm	/usr/lib64/libm.so.6	270112	681	0	63	0
+       669	        80	    371737	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       670	       168	     66509	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       671	        51	    386178	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       672	        51	    386069	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       673	        51	    382142	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       674	       118	    156288	    0	      1	                                     pow	/usr/lib64/libm.so.6	156128	429	0	44	0
+       675	        60	    413741	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       676	        51	    386949	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       677	        53	    382026	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       678	       579	    453145	    0	      1	                           __slowexp_avx	/usr/lib64/libm.so.6	452992	340	0	53	0
+       679	       678	    450918	    0	      1	                               __add_avx	/usr/lib64/libm.so.6	450784	683	0	64	0
+       680	       679	    270808	    0	      1	                                   __acr	/usr/lib64/libm.so.6	270800	188	0	65	0
+       681	        68	    371592	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       682	        80	    371673	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       683	        51	    386676	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       684	      1030	     11056	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       685	        51	    386983	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       686	        51	    380320	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       687	        53	    382130	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       688	        53	    384010	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       689	        47	    423741	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       690	       119	     84415	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       691	        47	    423586	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       692	        80	    371547	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       693	        60	    413709	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       694	        80	    371733	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       695	        80	    371745	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       696	       391	    371364	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       697	        80	    371689	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       698	        65	     28555	    0	      1	                       __kernel_standard	/usr/lib64/libm.so.6	22624	9721	0	49	0
+       699	        60	    413704	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       700	        60	    413630	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       701	       222	    411708	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       702	        47	    423529	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       703	        47	    422816	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       704	       119	     84578	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       705	        60	    413514	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       706	        80	    371450	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       707	        51	    386729	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       708	        80	    371759	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       709	      1027	     10342	    0	      0	                           strat_average	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10286	117	0	40	0
+       710	        80	    371709	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       711	        80	    371717	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       712	        80	    371592	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       713	        53	      4240	    0	      0	                     [Import thunk atan]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4240	16	0	39	0
+       714	        51	    388568	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       715	        51	    382002	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       716	        51	    387357	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       717	       391	    371517	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       718	        60	    412453	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       719	       119	     84554	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       720	        47	    421828	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       721	       550	    159197	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+       722	       721	    420464	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       723	        80	    371470	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       724	       119	     84087	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       725	        53	    384319	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       726	       168	     66592	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       727	        60	    417227	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       728	        51	    386654	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       729	        47	    421439	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       730	        65	    154099	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       731	        60	    413690	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       732	        80	    371517	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       733	        67	    154080	    0	      1	                                     exp	/usr/lib64/libm.so.6	154080	154	0	42	0
+       734	       222	    411722	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       735	        47	    423693	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       736	        47	    423732	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       737	        47	    421477	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       738	        80	    372093	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       739	       667	    270112	    0	      1	                                    norm	/usr/lib64/libm.so.6	270112	681	0	63	0
+       740	        68	    371697	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       741	        68	    371681	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       742	        60	    413726	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       743	        68	    371344	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       744	        80	    371753	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       745	        60	    416279	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       746	        60	    415574	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       747	        47	    421980	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       748	        68	    371364	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       749	        51	    387016	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       750	        60	    415296	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       751	      1019	     10619	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+       752	        60	    412932	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       753	       970	    453794	    1	      1	           [Loop@0x6ec90 in __mpexp_avx]	/usr/lib64/libm.so.6	453776	84		66	0
+       754	       973	    452385	    1	      1	             [Loop@0x6e718 in __mul_avx]	/usr/lib64/libm.so.6	452376	41		57	0
+       755	        53	    382110	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       756	        60	    412865	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       757	       119	     84570	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       758	        53	    384047	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       759	       119	     84052	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       760	        60	    415623	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       761	       168	     66461	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       762	        60	    413095	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       763	        68	    371721	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       764	        60	    412954	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       765	        47	    421698	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       766	       119	     84494	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       767	        60	    413713	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       768	        51	    382110	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       769	        53	    382365	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       770	        51	    387086	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       771	      1030	     11064	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       772	        51	    387250	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       773	       119	     83895	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       774	        53	    382087	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       775	        47	    422812	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       776	      1018	     10123	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+       777	       119	     84325	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       778	      1030	     11008	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       779	       222	    411910	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       780	       118	    156151	    0	      1	                                     pow	/usr/lib64/libm.so.6	156128	429	0	44	0
+       781	       119	     85291	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       782	        68	    371489	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       783	        51	    380418	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       784	       119	     84309	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       785	        51	    386763	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       786	        47	    421523	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       787	        68	    371606	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       788	       119	     83926	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       789	       168	     66331	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       790	        60	    415651	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       791	       222	    411648	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       792	        60	    418025	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       793	       551	    412283	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       794	       118	    156128	    0	      1	                                     pow	/usr/lib64/libm.so.6	156128	429	0	44	0
+       795	        51	    380392	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       796	        68	    371701	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       797	        51	    387142	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       798	        68	    371505	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       799	        60	    412937	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       800	        51	    388580	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       801	        51	    387209	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       802	        47	    421367	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       803	      1018	      9915	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+       804	        47	    421481	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       805	       119	     84398	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       806	        51	    386758	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       807	        60	    415800	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       808	        47	    423792	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       809	       119	     84175	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       810	        53	    383986	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       811	       168	     66476	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       812	        53	    384145	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       813	        51	    386499	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       814	        68	    371371	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       815	       551	    412214	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       816	      1030	     11014	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       817	        53	    384027	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       818	        60	    413798	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       819	        51	    385930	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       820	        47	    423769	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       821	        51	    388576	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       822	       222	    411920	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       823	       168	     66440	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       824	        68	    371733	    0	      1	                       __ieee754_exp_avx	/usr/lib64/libm.so.6	371344	1270	0	43	0
+       825	        60	    416040	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       826	        51	    386210	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       827	        65	     31418	    0	      1	                       __kernel_standard	/usr/lib64/libm.so.6	22624	9721	0	49	0
+       828	        47	    421799	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       829	      1030	     11050	    0	      0	                          part_fall_time	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9936	322	0	41	0
+       830	        47	    421845	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       831	      1018	      9930	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+       832	        60	    415787	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       833	       222	    411554	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       834	        47	    422600	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       835	       168	     66568	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       836	        51	    387091	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       837	        60	    415841	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       838	       222	    411928	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       839	        51	    386685	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       840	       168	     66412	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       841	      1018	      9979	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+       842	        60	    415737	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       843	        60	    413695	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       844	      1016	      5138	    1	      0	              [Loop at line 172 in main]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	5100	51	5151	33	0
+       845	        47	    423783	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       846	       550	    159185	    0	      1	                                  sincos	/usr/lib64/libm.so.6	159104	106	0	6	0
+       847	        51	    386234	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       848	        60	    413657	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       849	       119	     85288	    0	      1	                      __ieee754_pow_sse2	/usr/lib64/libm.so.6	83872	4588	0	45	0
+       850	        47	    424507	    0	      1	                               __cos_avx	/usr/lib64/libm.so.6	420464	4980	0	11	0
+       851	        60	    413644	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       852	        60	    415660	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       853	       168	     66600	    0	      1	                                  __exp1	/usr/lib64/libm.so.6	66224	1216	0	50	0
+       854	        60	    416032	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       855	       222	    411606	    0	      1	                                 csloww1	/usr/lib64/libm.so.6	411296	897	0	52	0
+       856	        51	    386350	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       857	        51	    387020	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       858	        51	    382052	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       859	        60	    415669	    0	      1	                               __sin_avx	/usr/lib64/libm.so.6	412208	8251	0	38	0
+       860	        53	    383944	    0	      1	                              __atan_avx	/usr/lib64/libm.so.6	380320	9338	0	27	0
+       861	      1140	      5413	    1	      0	              [Loop at line 199 in main]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	5348	156	5611	47	0
+       862	       861	    333944	    0	      1	                                  printf	/usr/lib64/libc.so.6	333792	161	0	75	0
+       863	       862	    304360	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       864	       987	    316631	    1	      1	           [Loop@0x4d4d0 in __printf_fp]	/usr/lib64/libc.so.6	316624	22		77	0
+       865	       864	    312916	    0	      1	                        hack_digit.13574	/usr/lib64/libc.so.6	312784	340	0	79	0
+       866	       989	    283631	    1	      1	          [Loop@0x453e0 in __mpn_divrem]	/usr/lib64/libc.so.6	283616	25		80	0
+       867	      1142	      5476	    1	      0	              [Loop at line 206 in main]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	5424	61	5485	48	0
+       868	       867	    333944	    0	      1	                                  printf	/usr/lib64/libc.so.6	333792	161	0	75	0
+       869	       868	    293172	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       870	       869	    484810	    0	      1	                         _IO_file_xsputn	/usr/lib64/libc.so.6	484704	619	0	82	0
+       871	       867	    333875	    0	      1	                                  printf	/usr/lib64/libc.so.6	333792	161	0	75	0
+       872	       868	    304223	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       873	       868	    291224	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       874	       868	    304112	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       875	       869	    484797	    0	      1	                         _IO_file_xsputn	/usr/lib64/libc.so.6	484704	619	0	82	0
+       876	       868	    304360	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       877	       876	    313248	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       878	       868	    293170	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       879	       868	    304231	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       880	       876	    314947	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       881	       868	    303810	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       882	       991	    314646	    1	      1	           [Loop@0x4cc80 in __printf_fp]	/usr/lib64/libc.so.6	314496	271		83	0
+       883	       868	    291877	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       884	       876	    313748	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       885	       884	    214476	    0	      1	                                   isnan	/usr/lib64/libc.so.6	214448	36	0	84	0
+       886	       876	    315110	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       887	       876	    315089	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       888	       876	    321943	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       889	       888	    489594	    0	      1	                       _IO_file_overflow	/usr/lib64/libc.so.6	489152	508	0	85	0
+       890	       889	    488411	    0	      1	                            _IO_do_write	/usr/lib64/libc.so.6	488288	266	0	86	0
+       891	       993	    483186	    1	      1	        [Loop@0x75f50 in _IO_file_write]	/usr/lib64/libc.so.6	483152	49		87	0
+       892	       891	    953440	    0	      1	                                 __write	/usr/lib64/libc.so.6	953424	90	0	89	0
+       893	       868	    291384	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       894	       893	    127856	    0	      1	                            func@0x1f370	/usr/lib64/libc.so.6	127856	6	0	90	0
+       895	       868	    304220	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       896	       876	    313339	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       897	       868	    293143	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       898	       897	    590270	    0	      1	                               strchrnul	/usr/lib64/libc.so.6	590160	111	0	91	0
+       899	       868	    291856	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       900	       868	    291265	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       901	       900	    590220	    0	      1	                               strchrnul	/usr/lib64/libc.so.6	590160	111	0	91	0
+       902	       868	    291529	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       903	       863	    316165	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       904	       868	    291239	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       905	      1142	      5424	    1	      0	              [Loop at line 206 in main]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	5424	61	5485	48	0
+       906	       864	    312929	    0	      1	                        hack_digit.13574	/usr/lib64/libc.so.6	312784	340	0	79	0
+       907	       868	    304264	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       908	       862	    306197	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       909	       868	    291134	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       910	       869	    484756	    0	      1	                         _IO_file_xsputn	/usr/lib64/libc.so.6	484704	619	0	82	0
+       911	       869	    484880	    0	      1	                         _IO_file_xsputn	/usr/lib64/libc.so.6	484704	619	0	82	0
+       912	       911	    488411	    0	      1	                            _IO_do_write	/usr/lib64/libc.so.6	488288	266	0	86	0
+       913	       995	    483186	    1	      1	        [Loop@0x75f50 in _IO_file_write]	/usr/lib64/libc.so.6	483152	49		87	0
+       914	       913	    953440	    0	      1	                                 __write	/usr/lib64/libc.so.6	953424	90	0	89	0
+       915	       876	    313247	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       916	       868	    304118	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       917	       876	    313335	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       918	      1142	      5459	    1	      0	              [Loop at line 206 in main]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	5424	61	5485	48	0
+       919	       876	    313245	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       920	       868	    291549	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       921	       868	    293144	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       922	       876	    315081	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       923	       868	    293129	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       924	       868	    293232	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       925	       868	    304269	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       926	       868	    304172	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       927	       867	    333925	    0	      1	                                  printf	/usr/lib64/libc.so.6	333792	161	0	75	0
+       928	       862	    304112	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       929	       868	    304110	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       930	       868	    291836	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       931	       868	    291189	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       932	       868	    291566	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       933	       869	    484825	    0	      1	                         _IO_file_xsputn	/usr/lib64/libc.so.6	484704	619	0	82	0
+       934	      1142	      5454	    1	      0	              [Loop at line 206 in main]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	5424	61	5485	48	0
+       935	       864	    312910	    0	      1	                        hack_digit.13574	/usr/lib64/libc.so.6	312784	340	0	79	0
+       936	       862	    293172	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       937	       936	    484765	    0	      1	                         _IO_file_xsputn	/usr/lib64/libc.so.6	484704	619	0	82	0
+       938	       868	    291662	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       939	       867	    333806	    0	      1	                                  printf	/usr/lib64/libc.so.6	333792	161	0	75	0
+       940	       863	    313238	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       941	       876	    313262	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       942	       876	    313233	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       943	       869	    484704	    0	      1	                         _IO_file_xsputn	/usr/lib64/libc.so.6	484704	619	0	82	0
+       944	       862	    292167	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       945	       868	    292161	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       946	       868	    291478	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       947	       869	    484716	    0	      1	                         _IO_file_xsputn	/usr/lib64/libc.so.6	484704	619	0	82	0
+       948	       869	    484710	    0	      1	                         _IO_file_xsputn	/usr/lib64/libc.so.6	484704	619	0	82	0
+       949	       868	    291424	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       950	       893	    525168	    0	      1	                                    free	/usr/lib64/libc.so.6	525168	224	0	92	0
+       951	       862	    293143	    0	      1	                            _IO_vfprintf	/usr/lib64/libc.so.6	291120	21021	0	76	0
+       952	       951	    590190	    0	      1	                               strchrnul	/usr/lib64/libc.so.6	590160	111	0	91	0
+       953	       991	    314632	    1	      1	           [Loop@0x4cc80 in __printf_fp]	/usr/lib64/libc.so.6	314496	271		83	0
+       954	       863	    313748	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       955	       954	    214466	    0	      1	                                   isnan	/usr/lib64/libc.so.6	214448	36	0	84	0
+       956	       876	    313836	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       957	       580	    453920	    0	      1	                             __mpexp_avx	/usr/lib64/libm.so.6	453344	1282	0	56	0
+       958	       580	    453939	    0	      1	                             __mpexp_avx	/usr/lib64/libm.so.6	453344	1282	0	56	0
+       959	       581	    452328	    0	      1	                               __mul_avx	/usr/lib64/libm.so.6	452224	433	0	58	0
+       960	       959	    452376	    1	      1	             [Loop@0x6e6e8 in __mul_avx]	/usr/lib64/libm.so.6	452328	180		59	0
+       961	       581	    452392	    0	      1	                               __mul_avx	/usr/lib64/libm.so.6	452224	433	0	58	0
+       962	       594	    450336	    0	      1	                            __dbl_mp_avx	/usr/lib64/libm.so.6	450208	563	0	61	0
+       963	       594	    450340	    0	      1	                            __dbl_mp_avx	/usr/lib64/libm.so.6	450208	563	0	61	0
+       964	       581	    452415	    0	      1	                               __mul_avx	/usr/lib64/libm.so.6	452224	433	0	58	0
+       965	       580	    453964	    0	      1	                             __mpexp_avx	/usr/lib64/libm.so.6	453344	1282	0	56	0
+       966	       612	    452328	    0	      1	                               __mul_avx	/usr/lib64/libm.so.6	452224	433	0	58	0
+       967	       966	    452376	    1	      1	             [Loop@0x6e6e8 in __mul_avx]	/usr/lib64/libm.so.6	452328	180		59	0
+       968	       612	    452405	    0	      1	                               __mul_avx	/usr/lib64/libm.so.6	452224	433	0	58	0
+       969	       612	    452363	    0	      1	                               __mul_avx	/usr/lib64/libm.so.6	452224	433	0	58	0
+       970	       580	    453776	    0	      1	                             __mpexp_avx	/usr/lib64/libm.so.6	453344	1282	0	56	0
+       971	       580	    453794	    0	      1	                             __mpexp_avx	/usr/lib64/libm.so.6	453344	1282	0	56	0
+       972	       753	    452328	    0	      1	                               __mul_avx	/usr/lib64/libm.so.6	452224	433	0	58	0
+       973	       972	    452376	    1	      1	             [Loop@0x6e6e8 in __mul_avx]	/usr/lib64/libm.so.6	452328	180		59	0
+       974	       753	    452385	    0	      1	                               __mul_avx	/usr/lib64/libm.so.6	452224	433	0	58	0
+       975	         2	    137849	    0	      1	                       __libc_start_main	/usr/lib64/libc.so.6	137792	448	0	7	0
+       976	         2	    138036	    0	      1	                       __libc_start_main	/usr/lib64/libc.so.6	137792	448	0	7	0
+       977	         7	    563104	    0	      1	                           __memset_sse2	/usr/lib64/libc.so.6	562944	247	0	12	0
+       978	         7	    563104	    0	      1	                           __memset_sse2	/usr/lib64/libc.so.6	562944	247	0	12	0
+       979	         7	    563115	    0	      1	                           __memset_sse2	/usr/lib64/libc.so.6	562944	247	0	12	0
+       980	         7	    563121	    0	      1	                           __memset_sse2	/usr/lib64/libc.so.6	562944	247	0	12	0
+       981	        21	    250064	    0	      1	                       str_to_mpn.isra.0	/usr/lib64/libc.so.6	250016	632	0	68	0
+       982	        21	    250119	    0	      1	                       str_to_mpn.isra.0	/usr/lib64/libc.so.6	250016	632	0	68	0
+       983	        18	    361019	    0	      1	                             _IO_vfscanf	/usr/lib64/libc.so.6	356400	35060	0	28	0
+       984	       983	    361028	    1	      1	           [Loop@0x5823b in _IO_vfscanf]	/usr/lib64/libc.so.6	361019	1162		74	0
+       985	       984	    361036	    1	      1	           [Loop@0x58244 in _IO_vfscanf]	/usr/lib64/libc.so.6	361028	1153		73	0
+       986	        18	    361052	    0	      1	                             _IO_vfscanf	/usr/lib64/libc.so.6	356400	35060	0	28	0
+       987	       863	    316624	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       988	       863	    316631	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       989	       865	    283616	    0	      1	                            __mpn_divrem	/usr/lib64/libc.so.6	282688	1150	0	81	0
+       990	       865	    283631	    0	      1	                            __mpn_divrem	/usr/lib64/libc.so.6	282688	1150	0	81	0
+       991	       863	    314496	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       992	       863	    314646	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       993	       890	    483152	    0	      1	                          _IO_file_write	/usr/lib64/libc.so.6	483120	149	0	88	0
+       994	       890	    483186	    0	      1	                          _IO_file_write	/usr/lib64/libc.so.6	483120	149	0	88	0
+       995	       912	    483152	    0	      1	                          _IO_file_write	/usr/lib64/libc.so.6	483120	149	0	88	0
+       996	       912	    483186	    0	      1	                          _IO_file_write	/usr/lib64/libc.so.6	483120	149	0	88	0
+       997	       863	    314632	    0	      1	                             __printf_fp	/usr/lib64/libc.so.6	313232	9560	0	78	0
+       998	         4	      6302	    0	      0	                              get_points	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	6176	477	0	4	0
+       999	       998	      6376	    1	      0	        [Loop at line 277 in get_points]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	6302	198	6580,6568,6432	16	0
+      1000	         4	      6401	    0	      0	                              get_points	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	6176	477	0	4	0
+      1001	         4	      6332	    0	      0	                              get_points	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	6176	477	0	4	0
+      1002	         4	      6547	    0	      0	                              get_points	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	6176	477	0	4	0
+      1003	        31	     15040	    0	      0	                     set_eruption_values	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	12864	2395	0	19	0
+      1004	        31	     15087	    0	      0	                     set_eruption_values	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	12864	2395	0	19	0
+      1005	        34	     15432	    0	      0	                          GC_alloc_large	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	15346	222	0	21	0
+      1006	        34	     15470	    0	      0	                          GC_alloc_large	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	15346	222	0	21	0
+      1007	        37	     20461	    0	      0	                         GC_stopped_mark	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	20245	678	0	26	0
+      1008	        37	     20589	    0	      0	                         GC_stopped_mark	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	20245	678	0	26	0
+      1009	        39	     44644	    0	      0	                            GC_mark_from	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	44541	1826	0	31	0
+      1010	      1009	     45364	    1	      0	         [Loop@0x40ae64 in GC_mark_from]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	44644	1702	46346	32	0
+      1011	        39	     45367	    0	      0	                            GC_mark_from	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	44541	1826	0	31	0
+      1012	        37	     20463	    0	      0	                         GC_stopped_mark	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	20245	678	0	26	0
+      1013	        39	     45379	    0	      0	                            GC_mark_from	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	44541	1826	0	31	0
+      1014	        39	     45415	    0	      0	                            GC_mark_from	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	44541	1826	0	31	0
+      1015	        39	     45406	    0	      0	                            GC_mark_from	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	44541	1826	0	31	0
+      1016	         3	      5100	    0	      0	                                    main	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4832	851	0	3	0
+      1017	         3	      5142	    0	      0	                                    main	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4832	851	0	3	0
+      1018	        45	      9896	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1019	      1018	     10208	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1020	        45	     10285	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1021	        45	     10884	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1022	        45	     10623	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1023	        45	     10650	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1024	        45	     10461	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1025	        45	      9896	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1026	      1025	     10208	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1027	      1026	     10286	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1028	      1026	     10402	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1029	        45	     10402	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1030	      1025	      9936	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1031	      1025	     10000	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1032	        45	     10000	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1033	      1026	     10398	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1034	        45	     10398	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1035	        45	     10646	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1036	      1026	     10334	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1037	        45	     10334	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1038	      1026	     10386	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1039	        45	     10386	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1040	        45	     10535	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1041	        45	     10634	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1042	      1025	     10073	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1043	        45	     10073	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1044	      1025	     11076	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1045	        45	     11076	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1046	        45	     10422	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1047	        45	     10543	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1048	        45	     10654	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1049	        45	     10252	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1050	        45	     10545	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1051	        45	     10609	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1052	        45	     10432	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1053	      1025	     10097	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1054	        45	     10097	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1055	      1026	     10286	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1056	        45	     10286	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1057	        45	     10899	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1058	        45	     10526	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1059	        45	     10903	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1060	        45	     10446	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1061	      1026	     10292	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1062	        45	     10292	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1063	        45	     10581	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1064	      1026	     10360	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1065	        45	     10360	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1066	        45	     10893	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1067	        45	     10569	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1068	        45	     10660	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1069	        45	     10450	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1070	        45	     10713	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1071	      1025	     10093	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1072	        45	     10093	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1073	      1026	     10374	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1074	        45	     10374	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1075	      1026	     10307	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1076	        45	     10307	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1077	        45	     10506	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1078	      1026	     10394	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1079	        45	     10394	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1080	        45	     10275	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1081	      1026	     10378	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1082	        45	     10378	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1083	        45	     10605	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1084	        45	     10484	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1085	      1026	     10356	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1086	        45	     10356	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1087	        45	     10468	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1088	      1025	     11093	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1089	        45	     11093	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1090	      1026	     10352	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1091	        45	     10352	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1092	      1025	     10041	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1093	        45	     10041	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1094	        45	     10425	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1095	      1026	     10382	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1096	        45	     10382	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1097	      1026	     10311	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1098	        45	     10311	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1099	        45	     10531	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1100	      1026	     10330	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1101	        45	     10330	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1102	        45	     10403	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1103	      1026	     10370	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1104	        45	     10370	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1105	        45	     10923	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1106	        45	     10585	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1107	        45	     10684	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1108	        45	     10232	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1109	      1025	      9966	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1110	        45	      9966	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1111	        45	     10551	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1112	        45	      9974	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1113	        45	     10150	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1114	        45	     10539	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1115	      1025	     10087	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1116	        45	     10087	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1117	      1025	     10065	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1118	        45	     10065	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1119	        45	     10917	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1120	      1025	     10057	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1121	        45	     10057	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1122	      1025	     11056	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1123	        45	     11056	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1124	      1026	     10342	    1	      0	       [Loop at line 144 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	10208	729	10912	35	0
+      1125	        45	     10342	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1126	        45	     10619	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1127	      1025	     11064	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1128	        45	     11064	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1129	        45	     10123	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1130	      1025	     11008	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1131	        45	     11008	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1132	        45	      9915	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1133	      1025	     11014	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1134	        45	     11014	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1135	      1025	     11050	    1	      0	       [Loop at line 123 in tephra_calc]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9896	1257	10939	37	0
+      1136	        45	     11050	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1137	        45	      9930	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1138	        45	      9979	    0	      0	                             tephra_calc	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	9680	1555	0	36	0
+      1139	         3	      5138	    0	      0	                                    main	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4832	851	0	3	0
+      1140	         3	      5348	    0	      0	                                    main	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4832	851	0	3	0
+      1141	         3	      5413	    0	      0	                                    main	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4832	851	0	3	0
+      1142	      1140	      5424	    1	      0	              [Loop at line 199 in main]	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	5348	156	5611	47	0
+      1143	         3	      5476	    0	      0	                                    main	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4832	851	0	3	0
+      1144	         3	      5424	    0	      0	                                    main	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4832	851	0	3	0
+      1145	         3	      5459	    0	      0	                                    main	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4832	851	0	3	0
+      1146	         3	      5454	    0	      0	                                    main	/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020	4832	851	0	3	0
+      1147	        -1	         0	    0	      0	                      [Outside any loop]	n/a	0	0	0	93	0

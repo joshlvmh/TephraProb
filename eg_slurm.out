@@ -1,0 +1,855 @@
+Running on host compute255.bc4.acrc.priv
+Time is Thu Aug 19 09:04:03 BST 2021
+Directory is /mnt/storage/home/jm17923/fellowship/TephraProb
+Slurm job IS is 4665863
+This job runs on the following machines:
+compute255
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018a (9.4.0.813654) 64-bit (glnxa64)
+                             February 23, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+project = 
+
+  struct with fields:
+
+        grd_pth: 'Krak_local_2500'
+           vent: [1x1 struct]
+    seasonality: 1
+        seasons: {'all'  'dry'  'rainy'}
+    seasons_tag: {'All months'  'Nov-Mar'  'Apr-Oct'}
+       grd_type: 0
+        run_pth: '/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9/'
+       run_name: 'krak_cord'
+         points: -9999
+            par: 0
+          cores: 2
+
+Compiling Tephra2...
+rm -fv *.o
+removed 'new_tephra.o'
+removed 'tephra2_calc.o'
+Compiling done!
+Run 1/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 13090
+ERUPTION_MASS = 1.12668e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/all/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.5098s
+Max Particle Fall Time = 3.61476e+06s
+PART_STEPS=50 bin_width=0.28
+Run 2/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 10489
+ERUPTION_MASS = 3.64837e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/all/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.4156s
+Max Particle Fall Time = 3.01245e+06s
+PART_STEPS=50 bin_width=0.28
+Run 3/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 11525
+ERUPTION_MASS = 5.03594e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/all/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.8547s
+Max Particle Fall Time = 3.25229e+06s
+PART_STEPS=50 bin_width=0.28
+Run 4/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 13609
+ERUPTION_MASS = 1.06333e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/all/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.7245s
+Max Particle Fall Time = 3.73483e+06s
+PART_STEPS=50 bin_width=0.28
+Run 5/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 13055
+ERUPTION_MASS = 1.0075e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/all/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.495s
+Max Particle Fall Time = 3.60654e+06s
+PART_STEPS=50 bin_width=0.28
+Run 6/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 12566
+ERUPTION_MASS = 1.18323e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/all/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.2914s
+Max Particle Fall Time = 3.4933e+06s
+PART_STEPS=50 bin_width=0.28
+Run 7/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 12904
+ERUPTION_MASS = 1.30182e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/all/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.4325s
+Max Particle Fall Time = 3.57168e+06s
+PART_STEPS=50 bin_width=0.28
+Run 8/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 12841
+ERUPTION_MASS = 1.19998e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/all/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.4062s
+Max Particle Fall Time = 3.55703e+06s
+PART_STEPS=50 bin_width=0.28
+Run 9/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 11411
+ERUPTION_MASS = 6.9094e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/all/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.8066s
+Max Particle Fall Time = 3.2259e+06s
+PART_STEPS=50 bin_width=0.28
+Run 10/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 12468
+ERUPTION_MASS = 9.86626e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/all/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.2505s
+Max Particle Fall Time = 3.47062e+06s
+PART_STEPS=50 bin_width=0.28
+Run 11/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 11370
+ERUPTION_MASS = 1.02502e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/rainy/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.7894s
+Max Particle Fall Time = 3.21643e+06s
+PART_STEPS=50 bin_width=0.28
+Run 12/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 12938
+ERUPTION_MASS = 1.73333e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/rainy/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.4465s
+Max Particle Fall Time = 3.57951e+06s
+PART_STEPS=50 bin_width=0.28
+Run 13/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 13068
+ERUPTION_MASS = 1.7112e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/rainy/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.5005s
+Max Particle Fall Time = 3.60959e+06s
+PART_STEPS=50 bin_width=0.28
+Run 14/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 10649
+ERUPTION_MASS = 6.0459e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/rainy/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.4837s
+Max Particle Fall Time = 3.04949e+06s
+PART_STEPS=50 bin_width=0.28
+Run 15/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 11791
+ERUPTION_MASS = 3.13286e+09
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/rainy/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.9671s
+Max Particle Fall Time = 3.31405e+06s
+PART_STEPS=50 bin_width=0.28
+Run 16/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 12570
+ERUPTION_MASS = 1.265e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/rainy/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.2931s
+Max Particle Fall Time = 3.49425e+06s
+PART_STEPS=50 bin_width=0.28
+Run 17/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 12466
+ERUPTION_MASS = 1.25822e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/rainy/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.2499s
+Max Particle Fall Time = 3.47025e+06s
+PART_STEPS=50 bin_width=0.28
+Run 18/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 10562
+ERUPTION_MASS = 5.77746e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/rainy/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.4469s
+Max Particle Fall Time = 3.02945e+06s
+PART_STEPS=50 bin_width=0.28
+Run 19/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 10409
+ERUPTION_MASS = 5.75737e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/rainy/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.3813s
+Max Particle Fall Time = 2.99382e+06s
+PART_STEPS=50 bin_width=0.28
+Run 20/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 11826
+ERUPTION_MASS = 8.84243e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/rainy/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.9815s
+Max Particle Fall Time = 3.32197e+06s
+PART_STEPS=50 bin_width=0.28
+Run 21/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 10515
+ERUPTION_MASS = 7.51155e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/dry/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.4268s
+Max Particle Fall Time = 3.01851e+06s
+PART_STEPS=50 bin_width=0.28
+Run 22/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 10905
+ERUPTION_MASS = 8.75263e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/dry/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.5926s
+Max Particle Fall Time = 3.1088e+06s
+PART_STEPS=50 bin_width=0.28
+Run 23/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 13269
+ERUPTION_MASS = 1.77297e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/dry/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.5842s
+Max Particle Fall Time = 3.65628e+06s
+PART_STEPS=50 bin_width=0.28
+Run 24/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 10893
+ERUPTION_MASS = 6.33663e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/dry/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.5876s
+Max Particle Fall Time = 3.10606e+06s
+PART_STEPS=50 bin_width=0.28
+Run 25/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 13152
+ERUPTION_MASS = 9.51036e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/dry/0001.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.5355s
+Max Particle Fall Time = 3.62908e+06s
+PART_STEPS=50 bin_width=0.28
+Run 26/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 10925
+ERUPTION_MASS = 6.61368e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/dry/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.6011s
+Max Particle Fall Time = 3.11345e+06s
+PART_STEPS=50 bin_width=0.28
+Run 27/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 12462
+ERUPTION_MASS = 1.21869e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/dry/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.2481s
+Max Particle Fall Time = 3.46926e+06s
+PART_STEPS=50 bin_width=0.28
+Run 28/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 12610
+ERUPTION_MASS = 1.08638e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/dry/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.31s
+Max Particle Fall Time = 3.50358e+06s
+PART_STEPS=50 bin_width=0.28
+Run 29/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 12863
+ERUPTION_MASS = 1.22735e+11
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/dry/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 44.4152s
+Max Particle Fall Time = 3.56206e+06s
+PART_STEPS=50 bin_width=0.28
+Run 30/30
+Opened log file:node_ for writing ....
+PLUME_HEIGHT = 11637
+ERUPTION_MASS = 1.32613e+10
+VENT_EASTING = 546805
+VENT_NORTHING = 9325502
+VENT_ELEVATION = 1700
+EDDY_CONST=0.04
+DIFFUSION_COEFFICIENT=3900
+FALL_TIME_THRESHOLD=30500
+LITHIC_DENSITY=2600
+PUMICE_DENSITY=1000
+COL_STEPS = 50
+PART_STEPS = 50
+ALPHA = 3
+BETA = 1.8
+Using custom grain data: /mnt/storage/home/jm17923/fellowship/TephraProb/RUNS//krak_cord/9/GS/dry/0002.gsd
+MAX_GRAINSIZE = -6
+MIN_GRAINSIZE = 8
+
+Min Particle Fall Time = 43.902s
+Max Particle Fall Time = 3.27826e+06s
+PART_STEPS=50 bin_width=0.28
+Modelling finished!
+
+project = 
+
+  struct with fields:
+
+        grd_pth: 'Krak_local_2500'
+           vent: [1x1 struct]
+    seasonality: 1
+        seasons: {'all'  'dry'  'rainy'}
+    seasons_tag: {'All months'  'Nov-Mar'  'Apr-Oct'}
+       grd_type: 0
+        run_pth: '/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9/'
+       run_name: 'krak_cord'
+         points: -9999
+            par: 0
+          cores: 2
+
+[Warning: Directory already exists.] 
+[> In process_T2_JC (line 26)
+  In TephraProb_wrapper_JC (line 19)] 
+- Summing files...
+
+project = 
+
+  struct with fields:
+
+        grd_pth: 'Krak_local_2500'
+           vent: [1x1 struct]
+    seasonality: 1
+        seasons: {'all'  'dry'  'rainy'}
+    seasons_tag: {'All months'  'Nov-Mar'  'Apr-Oct'}
+       grd_type: 0
+        run_pth: '/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9/'
+       run_name: 'krak_cord'
+         points: -9999
+            par: 0
+          cores: 2
+
+[Warning: Directory already exists.] 
+[> In probability_maker_JC (line 63)
+  In TephraProb_wrapper_JC (line 20)] 
+- Summing files...
+- Saving project file
+- Saving project file
+- Saving project file
+Tephra2 files have already been post processed. To re-process them, delete the dataT2_*.mat files from the DATA/ folder of your run
+Tephra2 files have already been post processed. To re-process them, delete the dataT2_*.mat files from the DATA/ folder of your run
+- Computing Season all
+	_Loading Tephra2 data for season all
+	_Computing probability maps 
+- Computing Season dry
+	_Loading Tephra2 data for season dry
+	_Computing probability maps 
+- Computing Season rainy
+	_Loading Tephra2 data for season rainy
+	_Computing probability maps 
+- Done!
+
+project = 
+
+  struct with fields:
+
+        grd_pth: 'Krak_local_2500'
+           vent: [1x1 struct]
+    seasonality: 1
+        seasons: {'all'  'dry'  'rainy'}
+    seasons_tag: {'All months'  'Nov-Mar'  'Apr-Oct'}
+       grd_type: 0
+        run_pth: '/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9/'
+       run_name: 'krak_cord'
+         points: -9999
+            par: 0
+          cores: 2
+
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 79)
+  In TephraProb_wrapper_JC (line 21)] 
+- Loading probability data...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probability outputs - ArcMap ASCII Rasters - all...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probability outputs - ArcMap ASCII Rasters - dry...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probability outputs - ArcMap ASCII Rasters - rainy...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 79)
+  In TephraProb_wrapper_JC (line 21)] 
+- Loading probability data...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probabilistic isomass - ArcMap ASCII Rasters - all...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probabilistic isomass - ArcMap ASCII Rasters - dry...
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 88)
+  In TephraProb_wrapper_JC (line 21)] 
+[Warning: Directory already exists.] 
+[> In exportASCII_JC (line 99)
+  In TephraProb_wrapper_JC (line 21)] 
+- Writing Probabilistic isomass - ArcMap ASCII Rasters - rainy...
+Finish time is Thu Aug 19 09:13:11 BST 2021

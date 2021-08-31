@@ -7,8 +7,9 @@ CURVES="$PROJECT_HOME/CURVES"
 GRID="$PROJECT_HOME/GRID"
 WIND="$PROJECT_HOME/WIND"
 #MODEL="$TMP_HOME/../tephra2"
+MODEL="/mnt/storage/home/jm17923/fellowship/tephra2"
 #MODEL="$PROJECT_HOME/MODEL"
-MODEL="/mnt/storage/home/jm17923/fellowship/MODEL"
+#MODEL="/mnt/storage/home/jm17923/fellowship/MODEL"
 RUNS="$TMP_HOME/RUNS/"
 export CODE
 export CURVES
@@ -16,3 +17,7 @@ export GRID
 export WIND
 export MODEL
 export RUNS
+TEPH_BIN="tephra2_2020"
+TEPH_INV_BIN="tephra2-inversion_2020"
+export TEPH_BIN
+export TEPH_INV_BIN

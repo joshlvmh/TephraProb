@@ -36,3 +36,4 @@
        - tephraProb.m
        - TephraProb_wrapper_JC
        - RUNS/krak_cord/9/T2_stor.txt
+  - replace 'tephra2-2012' with getenv('TEPH_BIN')

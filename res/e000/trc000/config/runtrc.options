@@ -1,0 +1,14 @@
+-r
+/mnt/storage/home/jm17923/fellowship/TephraProb/res/e000/trc000
+-quiet
+-cs-file
+/mnt/storage/home/jm17923/fellowship/TephraProb/res/e000/callstacks.def
+--cs-mode=no-count-loops,no-count-flops,stack-stitching
+--target-loops=n
+--count-flops
+--benchmarks=dram,mcdram,cpu_cache,flop_peak
+--
+/mnt/storage/home/jm17923/fellowship/tephra2/tephra2_2020
+/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9//CONF/all/1/0001.conf
+/mnt/storage/home/zs20225/TephraProb/GRID/Krak_local_2500/Krak_local_2500.utm
+/mnt/storage/home/zs20225/TephraProb/WIND/wind_data/ascii/14183.gen

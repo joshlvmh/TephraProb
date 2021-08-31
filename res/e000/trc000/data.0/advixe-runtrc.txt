@@ -1,0 +1,10 @@
+
+=== Start: [2021/08/31 17:35:22] === 
+Peak bandwidth measurement started...
+Peak bandwidth measurement finished.
+Analysis started...
+Result file: /mnt/storage/home/jm17923/fellowship/TephraProb/res/e000/trc000/trc000.advixe 
+Application exit code: 0 
+Result file: /mnt/storage/home/jm17923/fellowship/TephraProb/res/e000/trc000/trc000.advixe 
+Analysis completed
+=== End: [2021/08/31 17:40:28] === 

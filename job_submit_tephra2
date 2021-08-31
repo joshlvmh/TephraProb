@@ -22,13 +22,58 @@ echo Slurm job IS is $SLURM_JOBID
 echo This job runs on the following machines:
 echo $SLURM_JOB_NODELIST
 
-matlab $options -r TephraProb_wrapper_JC
+start=`date +%s`
+
+##matlab $options -r TephraProb_wrapper_JC
 
 #${MODEL}/tephra2_2020 ${PROJECT_RUN}/CONF/all/1/0001.conf ${GRID}/Krak_local_2500/Krak_local_2500.utm ${WIND}/wind_data/ascii/14183.gen ${PROJECT_RUN}/GS/all/0001.gsd > ${PROJECT_RUN}/OUT/all/1/krak_cord_0001.out
 
 ##mpirun -np 32 -hostfile $SLURM_JOB_NODELIST ./MODEL/tephra2-inversion_2020 ./MODEL/tephra2-inversion-conf_
 
 ##chunk=`printf "%02d" $SLURM_ARRAY_TASK_ID`
+
 ##srun parallel -j 16 -a T2_stor.txt$chunk
 
+advixe-cl -collect roofline -project-dir res -- $MODEL/$TEPH_BIN $PROJECT_RUN/CONF/all/1/0001.conf $GRID/Krak_local_2500/Krak_local_2500.utm $WIND/wind_data/ascii/14183.gen > $PROJECT_RUN/OUT/all/1/krak_cord_0001.out
+
 echo Finish time is `date`
+
+sleep 100
+
+end=`date +%s`
+
+runtime=`echo "$end - $start" |bc`
+
+function show_time () {
+  num=$1
+  min=0
+  hour=0
+  day=0
+  sec=0
+  if((num>59));then
+    ((sec=num%60))
+    ((num=num/60))
+    if((num>59));then
+      ((min=num%60))
+      ((num=num/60))
+      if((num>23));then
+        ((hour=num%24))
+        ((day=num/24))
+      else
+        ((hour=num))
+      fi
+    else
+      ((min=num))
+    fi
+  else
+    ((sec=num))
+  fi
+  echo "$day"d "$hour"h "$min"m "$sec"s
+}
+
+show_time $runtime
+
+echo Runtime: $runtime
+
+secs=$runtime
+printf '%dd:%dh:%dm:%ds\n' $((secs/86400)) $((secs%86400/3600)) $((secs%3600/60)) $((secs%60))

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="/mnt/storage/home/jm17923/fellowship/tephra2/forward_src/../common_src/tephra2_calc.c"
+           line_no="123"
+           routine="tephra_calc"
+           is_vectorized="0"
+           self_time="1.100003E-01"
+           total_time="1.850900E+02"
+           trip_counts=""
+           func_instance="37"
+           priority="0"/>
+  <hotspot filename="/mnt/storage/home/jm17923/fellowship/tephra2/forward_src/../common_src/tephra2_calc.c"
+           line_no="144"
+           routine="tephra_calc"
+           is_vectorized="0"
+           self_time="1.448001E+01"
+           total_time="1.827900E+02"
+           trip_counts=""
+           func_instance="35"
+           priority="0"/>
+  <hotspot filename="/mnt/storage/home/jm17923/fellowship/tephra2/forward_src/new_tephra.c"
+           line_no="172"
+           routine="main"
+           is_vectorized="0"
+           self_time="1.000121E-02"
+           total_time="1.851700E+02"
+           trip_counts=""
+           func_instance="33"
+           priority="0"/>
+  <hotspot filename="/mnt/storage/home/jm17923/fellowship/tephra2/forward_src/new_tephra.c"
+           line_no="206"
+           routine="main"
+           is_vectorized="0"
+           self_time="3.999399E-02"
+           total_time="7.899985E-01"
+           trip_counts=""
+           func_instance="48"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="GC_mark_from"
+           is_vectorized="0"
+           self_time="6.000253E-02"
+           total_time="6.000253E-02"
+           trip_counts=""
+           func_instance="30"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

@@ -404,7 +404,7 @@ if isfield(data, 'testrun') && isfield(data, 'long_lasting')
                             fclose(fid);
 
                             % T2_Stor prints the entire command for T2
-                            tmp_model= [getenv('MODEL'), 'tephra2-2012']; 
+                            tmp_model= [getenv('MODEL'), getenv('TEPH_BIN')]; 
                             tmp_conf = fullfile(out_pth, 'CONF', seas_str{seas}, num2str(i), [num2str(j, '%04d'), '.conf']);
                             tmp_wind = fullfile(data.wind_pth, [num2str(wind_vec(j), '%05d'), '.gen']);
                             tmp_gs   = fullfile(out_pth, 'GS', seas_str{seas}, [num2str(i, '%04d'), '.gsd']);
