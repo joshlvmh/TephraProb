@@ -11,6 +11,9 @@
 
 cd $SLURM_SUBMIT_DIR
 
+module load languages/intel/2018-u3
+module load tools/git/2.18.0
+module load languages/gcc/9.3.0
 module load apps/matlab/2018a
 
 options="-nodesktop -noFigureWindows -nosplash"
@@ -24,7 +27,7 @@ echo $SLURM_JOB_NODELIST
 
 start=`date +%s`
 
-##matlab $options -r TephraProb_wrapper_JC
+matlab $options -r TephraProb_wrapper_JC
 
 #${MODEL}/tephra2_2020 ${PROJECT_RUN}/CONF/all/1/0001.conf ${GRID}/Krak_local_2500/Krak_local_2500.utm ${WIND}/wind_data/ascii/14183.gen ${PROJECT_RUN}/GS/all/0001.gsd > ${PROJECT_RUN}/OUT/all/1/krak_cord_0001.out
 
@@ -34,7 +37,7 @@ start=`date +%s`
 
 ##srun parallel -j 16 -a T2_stor.txt$chunk
 
-advixe-cl -collect roofline -project-dir res -- $MODEL/$TEPH_BIN $PROJECT_RUN/CONF/all/1/0001.conf $GRID/Krak_local_2500/Krak_local_2500.utm $WIND/wind_data/ascii/14183.gen > $PROJECT_RUN/OUT/all/1/krak_cord_0001.out
+##advixe-cl -collect roofline -project-dir res -- $MODEL/$TEPH_BIN $PROJECT_RUN/CONF/all/1/0001.conf $GRID/Krak_local_2500/Krak_local_2500.utm $WIND/wind_data/ascii/14183.gen > $PROJECT_RUN/OUT/all/1/krak_cord_0001.out
 
 echo Finish time is `date`
 

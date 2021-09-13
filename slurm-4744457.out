@@ -1,0 +1,99 @@
+Running on host compute076.bc4.acrc.priv
+Time is Wed Sep 1 12:47:56 BST 2021
+Directory is /mnt/storage/home/jm17923/fellowship/TephraProb
+Slurm job IS is 4744457
+This job runs on the following machines:
+compute076
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018a (9.4.0.813654) 64-bit (glnxa64)
+                             February 23, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+project = 
+
+  struct with fields:
+
+        grd_pth: 'Krak_local_2500'
+           vent: [1x1 struct]
+    seasonality: 1
+        seasons: {'all'  'dry'  'rainy'}
+    seasons_tag: {'All months'  'Nov-Mar'  'Apr-Oct'}
+       grd_type: 0
+        run_pth: '/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9/'
+       run_name: 'krak_cord'
+         points: -9999
+            par: 0
+          cores: 2
+
+Compiling Tephra2...
+[Warning: dialog is no longer supported when MATLAB is started with the
+-nodisplay or -noFigureWindows option or there is no display. For more
+information, see "Changes to -nodisplay and -noFigureWindows Startup Options"
+in the MATLAB Release Notes. To view the release note in your system browser,
+run web('www.mathworks.com/help/matlab/release-notes.html#br5ktrh-3',
+'-browser')] 
+[> In warnfiguredialog (line 21)
+  In dialog (line 39)
+  In msgbox (line 219)
+  In errordlg (line 59)
+  In runT2_JC (line 159)
+  In TephraProb_wrapper_JC (line 18)] 
+[Warning: MATLAB has disabled some advanced graphics rendering features by
+switching to software OpenGL. For more information, click <a
+href="matlab:opengl('problems')">here</a>.] 
+
+cmd_out =
+
+    'make: *** No targets specified and no makefile found.  Stop.
+     '
+
+
+project = 
+
+  struct with fields:
+
+        grd_pth: 'Krak_local_2500'
+           vent: [1x1 struct]
+    seasonality: 1
+        seasons: {'all'  'dry'  'rainy'}
+    seasons_tag: {'All months'  'Nov-Mar'  'Apr-Oct'}
+       grd_type: 0
+        run_pth: '/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9/'
+       run_name: 'krak_cord'
+         points: -9999
+            par: 0
+          cores: 2
+
+[Warning: Directory already exists.] 
+[> In process_T2_JC (line 26)
+  In TephraProb_wrapper_JC (line 19)] 
+- Summing files...
+/mnt/storage/home/jm17923/fellowship/TephraProb/RUNS/krak_cord/9/
+{Error using dlmread (line 147)
+Mismatch between file and format character vector.
+Trouble reading 'Numeric' field from file (row number 1, field number 1) ==>
+#EAST NORTH ELEV Kg/m^2 [0->0) [0->0) [0->0) [0->0) [0->0) [0->0) [0->0) [0->0)
+[0->0) [0->0) [0->0) [0->0) [0->0) [0->0) [0->0) [0->0) [0->0) [0->0) [0->0)
+[0->0) [0->0) [0->0) [0->0) [0->0) [0->0) [...
+
+Error in process_T2_JC (line 55)
+                tmpF            = dlmread(fullfile(project.run_pth, 'OUT',
+                runs{iR}, folds(j).name, files(k).name));
+
+Error in TephraProb_wrapper_JC (line 19)
+process_T2_JC
+} 
+MATLAB: management.cpp:671: find: Assertion `' failed.
+MATLAB: management.cpp:671: find: Assertion `' failed.
+/tmp/slurmd/job4744457/slurm_script: line 30: 26793 Aborted                 matlab $options -r TephraProb_wrapper_JC
+Finish time is Wed Sep 1 12:48:18 BST 2021
+0d 0h 2m 2s
+Runtime: 122
+0d:0h:2m:2s

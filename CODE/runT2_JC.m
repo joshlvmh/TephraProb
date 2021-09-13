@@ -77,8 +77,6 @@ end
 clear data
 
 mod_pth = [getenv('MODEL'), filesep, filesep, 'forward_src', filesep];
-mod_pth = getenv('MODEL')
-disp(mod_pth)
 
 % On PCs, add the Cygwin folder to the PATH environment
 % Added 08-2018
@@ -149,7 +147,7 @@ else
     % Compiles the model and runs it
     disp('Compiling Tephra2...')
     cd(mod_pth);                            % Navigates to the makefile
-    system('make');
+    %system('make clean');
     [stat, cmd_out] = system('make');       % Compiles TEPHRA2
     
     if stat == 0                            % If compilation ok
