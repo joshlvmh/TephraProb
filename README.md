@@ -7,6 +7,12 @@
 2. Profile and compare
 3. Translation exploration
 
+grep.out:
+```
+grep -r --exclude=*.{out,o} 'CURVES\|CODE\|GRID\|WIND\|RUNS\|MODEL' ./ &>grep.out
+sed -i '/^.\/roof_results/d' grep.out
+```
+
 ## Changes
 
 0. - setup.sh contains the filepaths for CURVES, CODE, GRID, WIND, RUNS, MODEL
