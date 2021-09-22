@@ -19,4 +19,3 @@ runT2_JC
 process_T2_JC
 probability_maker_JC
 exportASCII_JC
-exit(0)
